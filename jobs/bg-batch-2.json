@@ -1,0 +1,14 @@
+{"type":"backgrounds","out":"brand/backgrounds/candidates/batch2","per_query":8,
+ "queries":{
+  "kitchen":"kitchen interior unsplash",
+  "living":"living room interior unsplash",
+  "bedroom":"bedroom interior unsplash",
+  "house":"modern house architecture unsplash",
+  "pool":"swimming pool villa unsplash",
+  "home":"house exterior pexels",
+  "interior":"interior design pexels",
+  "keys":"house keys unsplash",
+  "garden":"garden patio unsplash",
+  "coast":"Garden Route coast South Africa",
+  "knysna":"Knysna heads",
+  "plett":"Plettenberg Bay beach"}}

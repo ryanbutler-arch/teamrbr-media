@@ -18,7 +18,7 @@ def build(job_path):
         api = ("https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({
             "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
             "gsrsearch": q + " filetype:bitmap", "gsrlimit": 50, "prop": "imageinfo",
-            "iiprop": "url|size|extmetadata", "iiurlwidth": 1600}))
+            "iiprop": "url|size|extmetadata", "iiurlwidth": 2400}))
         try:
             pages = json.loads(get(api)).get("query", {}).get("pages", {}).values()
         except Exception as e:
@@ -41,7 +41,7 @@ def build(job_path):
                 open(tmp, "wb").write(data)
                 im = Image.open(tmp).convert("RGB")
                 if min(im.size) < 900: continue
-                im.thumbnail((1600, 1600))
+                im.thumbnail((2400, 2400))
                 name = f"{tag}-{n+1}.jpg"; im.save(os.path.join(out, name), quality=85)
                 meta.append({"file": name, "tag": tag, "title": r.get("title"), "creator": r.get("creator"),
                              "license": r.get("license"), "source": r.get("foreign_landing_url")})
