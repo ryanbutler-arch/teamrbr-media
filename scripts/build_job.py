@@ -49,7 +49,7 @@ def build(job_path):
     out = job["out"]
     os.makedirs(os.path.dirname(out.rstrip('/')) or '.', exist_ok=True)
     tmp = tempfile.mkdtemp()
-    pngs = asyncio.run(make_post.render(job, tmp))
+    pngs, layers = asyncio.run(make_post.render(job, tmp, layers=True))
     if job.get("type") == "carousel":
         from PIL import Image
         os.makedirs(out, exist_ok=True)
@@ -62,16 +62,25 @@ def build(job_path):
         return out
     voice = job.get("voice", "gtts-za")
     segs = []
-    for i, (png, s) in enumerate(zip(pngs, job["slides"])):
+    for i, (png, s, (ov, bg)) in enumerate(zip(pngs, job["slides"], layers)):
         say = s.get("say") or " ".join(x for x in (s.get("headline"), s.get("body")) if x)
         mp3 = os.path.join(tmp, f"v{i}.mp3")
         tts(say, voice, mp3)
         tempo = float(job.get("tempo", 1.2))
         d = max(2.2, dur(mp3) / tempo + 0.3)
         seg = os.path.join(tmp, f"s{i}.mp4")
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", png, "-i", mp3,
-                        "-af", f"atempo={tempo},apad", "-t", f"{d:.2f}", "-r", "30", "-c:v", "libx264", "-pix_fmt", "yuv420p",
-                        "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2", seg], check=True)
+        enc = ["-af", f"atempo={tempo},apad", "-t", f"{d:.2f}", "-r", "30", "-c:v", "libx264", "-pix_fmt", "yuv420p",
+               "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2", seg]
+        if bg:  # slow push-in on the photo, text layer fixed on top
+            n = int(d * 30) + 2
+            zin = i % 2 == 0
+            z = f"1+0.08*on/{n}" if zin else f"1.08-0.08*on/{n}"
+            fc = (f"[0]scale=2160:3840,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s=1080x1920:fps=30[b];"
+                  f"[b][1]overlay=0:0,format=yuv420p[v]")
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", bg, "-loop", "1", "-i", ov, "-i", mp3,
+                            "-filter_complex", fc, "-map", "[v]", "-map", "2:a"] + enc, check=True)
+        else:
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", png, "-i", mp3] + enc, check=True)
         segs.append(seg)
     lst = os.path.join(tmp, "list.txt")
     open(lst, "w").write("".join(f"file '{s}'\n" for s in segs))
