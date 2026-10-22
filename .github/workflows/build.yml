@@ -28,7 +28,11 @@ jobs:
           for j in jobs/*.json; do
             [ -e "$j" ] || continue
             out=$(python -c "import json,sys;print(json.load(open('$j'))['out'])")
-            if [ ! -e "$out" ]; then python scripts/build_job.py "$j"; built=1; fi
+            if [ ! -e "$out" ]; then
+              mkdir -p logs
+              if python scripts/build_job.py "$j" > logs/last-build.log 2>&1; then built=1; else
+                cp logs/last-build.log "logs/FAILED-$(basename "$j" .json).log"; built=1; fi
+            fi
           done
           echo "built=$built" >> $GITHUB_ENV
       - name: Commit outputs
@@ -36,6 +40,7 @@ jobs:
         run: |
           git config user.name "teamrbr-bot"
           git config user.email "ryan.butler@kwsa.co.za"
-          git add media
+          git add media logs 2>/dev/null || true
+          git add media || true
           git commit -m "Build media from jobs"
           git push
