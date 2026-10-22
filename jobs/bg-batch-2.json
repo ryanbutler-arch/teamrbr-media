@@ -1,4 +1,4 @@
-{"type":"backgrounds","out":"brand/backgrounds/candidates/batch2","per_query":8,
+{"type":"backgrounds","out":"brand/backgrounds/candidates/batch2","per_query":8,"retry":2,
  "queries":{
   "kitchen":"kitchen interior unsplash",
   "living":"living room interior unsplash",
