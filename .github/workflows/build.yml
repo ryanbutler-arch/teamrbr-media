@@ -11,25 +11,38 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 32
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
+      - name: Find pending jobs
+        run: |
+          pending=""; needclip=0
+          for j in jobs/*.json; do
+            [ -e "$j" ] || continue
+            out=$(python -c "import json;print(json.load(open('$j'))['out'])")
+            if [ ! -e "$out" ]; then pending="$pending $j"
+              python -c "import json,sys;sys.exit(0 if json.load(open('$j')).get('type')=='clip' else 1)" && needclip=1
+            fi
+          done
+          echo "PENDING=$pending" >> $GITHUB_ENV; echo "NEEDCLIP=$needclip" >> $GITHUB_ENV; echo "pending:$pending"
       - name: Install tools
-        timeout-minutes: 8
+        if: env.PENDING != ''
+        timeout-minutes: 15
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-montserrat >/dev/null
-          pip install -q edge-tts==7.0.2 gTTS==2.5.4 playwright==1.47.0 pillow gdown==5.2.0 faster-whisper==1.1.1
+          pip install -q gTTS==2.5.4 edge-tts==7.0.2 playwright==1.47.0 pillow
+          if [ "$NEEDCLIP" = "1" ]; then pip install -q gdown==5.2.0 faster-whisper==1.1.1; fi
           for i in 1 2 3; do python -m playwright install --with-deps chromium >/dev/null && break; sleep 10; done
           npm install --prefix /tmp/rbrfonts @fontsource/montserrat@5.1.0 >/dev/null
       - name: Build pending jobs
+        if: env.PENDING != ''
         timeout-minutes: 22
         run: |
           set -e
           built=0
-          for j in jobs/*.json; do
-            [ -e "$j" ] || continue
+          for j in $PENDING; do
             out=$(python -c "import json,sys;print(json.load(open('$j'))['out'])")
             if [ ! -e "$out" ]; then
               mkdir -p logs
