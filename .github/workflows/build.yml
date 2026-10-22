@@ -1,0 +1,14 @@
+name: build-media
+on:
+  push:
+    paths: ['jobs/*.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check internet
+        run: curl -sI https://drive.google.com | head -1
