@@ -27,7 +27,12 @@ async def _edge(text, voice, path):
     await edge_tts.Communicate(text, voice, rate="+5%").save(path)
 
 def tts(text, voice, path):
-    """Microsoft neural voice first (45 s limit), then Google's South African English voice."""
+    """Google's South African English voice (Microsoft's service blocks GitHub runners).
+    A voice starting with "edge:" tries Microsoft first."""
+    if not str(voice).startswith("edge:"):
+        from gtts import gTTS
+        gTTS(text, lang="en", tld="co.za").save(path); return
+    voice = voice[5:]
     try:
         asyncio.run(asyncio.wait_for(_edge(text, voice, path), 45))
         if os.path.getsize(path) > 1000:
@@ -49,7 +54,7 @@ def build(job_path):
         from PIL import Image
         Image.open(pngs[0]).convert("RGB").save(out, quality=90)
         return out
-    voice = job.get("voice", "en-ZA-LukeNeural")
+    voice = job.get("voice", "gtts-za")
     segs = []
     for i, (png, s) in enumerate(zip(pngs, job["slides"])):
         say = s.get("say") or " ".join(x for x in (s.get("headline"), s.get("body")) if x)
