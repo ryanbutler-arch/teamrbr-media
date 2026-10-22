@@ -43,6 +43,6 @@ jobs:
         run: |
           git config user.name "teamrbr-bot"
           git config user.email "ryan.butler@kwsa.co.za"
-          for d in media logs; do [ -d "$d" ] && git add "$d"; done
+          for d in media logs brand; do [ -d "$d" ] && git add "$d"; done
           git diff --cached --quiet || git commit -m "Build media from jobs"
           git push
