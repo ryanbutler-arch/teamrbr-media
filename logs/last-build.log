@@ -1,67 +1,21 @@
-exterior usable results: 6
-saved exterior-1.jpg
-saved exterior-2.jpg
-saved exterior-3.jpg
-saved exterior-4.jpg
-saved exterior-5.jpg
-saved exterior-6.jpg
-home usable results: 24
-saved home-1.jpg
-saved home-2.jpg
-saved home-3.jpg
-saved home-4.jpg
-saved home-5.jpg
-saved home-6.jpg
-living usable results: 9
-saved living-1.jpg
-saved living-2.jpg
-saved living-3.jpg
-saved living-4.jpg
-saved living-5.jpg
-saved living-6.jpg
-kitchen usable results: 9
-saved kitchen-1.jpg
-saved kitchen-2.jpg
-saved kitchen-3.jpg
-saved kitchen-4.jpg
-saved kitchen-5.jpg
-saved kitchen-6.jpg
-bedroom usable results: 10
-saved bedroom-1.jpg
-saved bedroom-2.jpg
-saved bedroom-3.jpg
-saved bedroom-4.jpg
-saved bedroom-5.jpg
-saved bedroom-6.jpg
-pool usable results: 15
-saved pool-1.jpg
-saved pool-2.jpg
-saved pool-3.jpg
-saved pool-4.jpg
-saved pool-5.jpg
-saved pool-6.jpg
-george usable results: 4
-saved george-1.jpg
-saved george-2.jpg
-saved george-3.jpg
-saved george-4.jpg
-outeniqua usable results: 15
-saved outeniqua-1.jpg
-saved outeniqua-2.jpg
-saved outeniqua-3.jpg
-saved outeniqua-4.jpg
-saved outeniqua-5.jpg
-saved outeniqua-6.jpg
-wilderness usable results: 7
-saved wilderness-1.jpg
-saved wilderness-2.jpg
-saved wilderness-3.jpg
-saved wilderness-4.jpg
-saved wilderness-5.jpg
-saved wilderness-6.jpg
-keys usable results: 4
-saved keys-1.jpg
-saved keys-2.jpg
-saved keys-3.jpg
-saved keys-4.jpg
-built brand/backgrounds/candidates/batch1
+saved kitchen-1 (576, 1024)
+retry exterior-george-1 0 HTTP Error 402: Payment Required
+retry exterior-george-1 1 HTTP Error 402: Payment Required
+retry exterior-george-1 2 HTTP Error 402: Payment Required
+retry living-1 0 HTTP Error 402: Payment Required
+retry living-1 1 The read operation timed out
+retry living-1 2 HTTP Error 402: Payment Required
+retry pool-1 0 HTTP Error 402: Payment Required
+retry pool-1 1 HTTP Error 402: Payment Required
+retry pool-1 2 HTTP Error 402: Payment Required
+retry bedroom-1 0 HTTP Error 402: Payment Required
+retry bedroom-1 1 HTTP Error 402: Payment Required
+retry bedroom-1 2 HTTP Error 402: Payment Required
+retry entrance-1 0 HTTP Error 402: Payment Required
+retry entrance-1 1 HTTP Error 402: Payment Required
+retry entrance-1 2 HTTP Error 402: Payment Required
+retry estate-1 0 HTTP Error 402: Payment Required
+retry estate-1 1 HTTP Error 402: Payment Required
+retry estate-1 2 HTTP Error 402: Payment Required
+saved coast-1 (576, 1024)
+built brand/backgrounds/ai/batch1
