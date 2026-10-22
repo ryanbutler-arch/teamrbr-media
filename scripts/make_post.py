@@ -24,7 +24,7 @@ import asyncio, base64, html, json, os, subprocess, sys
 from playwright.async_api import async_playwright
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-FONT_DIR = "/tmp/rbrfonts/node_modules/@fontsource/montserrat/files"
+FONT_DIR = os.environ.get("RBR_FONT_DIR", "/tmp/rbrfonts/node_modules/@fontsource/montserrat/files")
 LOGO = os.path.join(REPO, "brand", "kw-eden-logo.png")
 FOOTER = ("Ryan Butler", "Team RBR", "083 281 7918")
 BANNED = ("realty", "valuation")

@@ -1,0 +1,17 @@
+{
+  "out": "media/2026-10-22/demo-voiced-reel.mp4",
+  "type": "reel",
+  "voice": "en-ZA-LukeNeural",
+  "slides": [
+    {"kicker": "Buyer tip", "headline": "Viewing a house this weekend?", "body": "3 things most buyers forget to check.",
+     "say": "Viewing a house in George this weekend? Here are three things most buyers forget to check."},
+    {"kicker": "1 of 3", "headline": "Open every tap", "body": "Low pressure and slow drains are cheap to spot and expensive to fix.",
+     "say": "One. Open every tap. Low water pressure and slow drains are cheap to spot, and expensive to fix."},
+    {"kicker": "2 of 3", "headline": "Look up", "body": "Stains on ceilings can point to roof leaks.",
+     "say": "Two. Look up. Stains on the ceiling can point to a leaking roof."},
+    {"kicker": "3 of 3", "headline": "Ask what stays", "body": "Curtains, light fittings, the pool pump. Get it in writing.",
+     "say": "Three. Ask what stays. Curtains, light fittings, the pool pump. Get it in writing."},
+    {"kicker": "Team RBR", "headline": "Want the full checklist?", "body": "I'll send it to you for free.", "cta": "DM me 'CHECK'",
+     "say": "Want the full checklist? Send me a DM with the word check, and I'll send it to you for free."}
+  ]
+}

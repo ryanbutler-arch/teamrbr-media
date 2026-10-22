@@ -1,0 +1,60 @@
+"""Build a voiced Reel (or a Story) from a job file. Runs on GitHub Actions.
+
+Job JSON (jobs/<name>.json):
+{
+  "out": "media/2026-10-23/reel.mp4",
+  "type": "reel",                 # or "story" (out should end .jpg)
+  "voice": "en-ZA-LukeNeural",    # optional; South African English male voice
+  "slides": [
+    {"kicker": "Buyer tip", "headline": "Viewing a house this weekend?",
+     "body": "3 things most buyers forget to check.",
+     "say": "Viewing a house this weekend? Here are three things most buyers forget to check."}
+  ]
+}
+Each slide stays on screen for as long as its voiceover lasts (min 2.5 s).
+"""
+import asyncio, json, os, subprocess, sys, tempfile
+sys.path.insert(0, os.path.dirname(__file__))
+import make_post  # noqa: E402
+
+def dur(path):
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                          "-of", "csv=p=0", path], capture_output=True, text=True, check=True)
+    return float(out.stdout.strip())
+
+async def tts(text, voice, path):
+    import edge_tts
+    await edge_tts.Communicate(text, voice, rate="+5%").save(path)
+
+def build(job_path):
+    job = json.load(open(job_path))
+    make_post.check_wording(job)
+    out = job["out"]
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    tmp = tempfile.mkdtemp()
+    pngs = asyncio.run(make_post.render(job, tmp))
+    if job.get("type") == "story":
+        from PIL import Image
+        Image.open(pngs[0]).convert("RGB").save(out, quality=90)
+        return out
+    voice = job.get("voice", "en-ZA-LukeNeural")
+    segs = []
+    for i, (png, s) in enumerate(zip(pngs, job["slides"])):
+        say = s.get("say") or " ".join(x for x in (s.get("headline"), s.get("body")) if x)
+        mp3 = os.path.join(tmp, f"v{i}.mp3")
+        asyncio.run(tts(say, voice, mp3))
+        d = max(2.5, dur(mp3) + 0.5)
+        seg = os.path.join(tmp, f"s{i}.mp4")
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", png, "-i", mp3,
+                        "-af", "apad", "-t", f"{d:.2f}", "-r", "30", "-c:v", "libx264", "-pix_fmt", "yuv420p",
+                        "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2", seg], check=True)
+        segs.append(seg)
+    lst = os.path.join(tmp, "list.txt")
+    open(lst, "w").write("".join(f"file '{s}'\n" for s in segs))
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", lst,
+                    "-c", "copy", "-movflags", "+faststart", out], check=True)
+    return out
+
+if __name__ == "__main__":
+    for p in sys.argv[1:]:
+        print("built", build(p))
