@@ -66,10 +66,11 @@ def build(job_path):
         say = s.get("say") or " ".join(x for x in (s.get("headline"), s.get("body")) if x)
         mp3 = os.path.join(tmp, f"v{i}.mp3")
         tts(say, voice, mp3)
-        d = max(2.5, dur(mp3) + 0.5)
+        tempo = float(job.get("tempo", 1.2))
+        d = max(2.2, dur(mp3) / tempo + 0.3)
         seg = os.path.join(tmp, f"s{i}.mp4")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", png, "-i", mp3,
-                        "-af", "apad", "-t", f"{d:.2f}", "-r", "30", "-c:v", "libx264", "-pix_fmt", "yuv420p",
+                        "-af", f"atempo={tempo},apad", "-t", f"{d:.2f}", "-r", "30", "-c:v", "libx264", "-pix_fmt", "yuv420p",
                         "-c:a", "aac", "-b:a", "128k", "-ar", "44100", "-ac", "2", seg], check=True)
         segs.append(seg)
     lst = os.path.join(tmp, "list.txt")
@@ -80,4 +81,8 @@ def build(job_path):
 
 if __name__ == "__main__":
     for p in sys.argv[1:]:
-        print("built", build(p))
+        if json.load(open(p)).get("type") == "clip":
+            import clip_job
+            print("built", clip_job.build(p))
+        else:
+            print("built", build(p))

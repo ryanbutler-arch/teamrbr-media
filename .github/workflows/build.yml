@@ -11,7 +11,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 32
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -19,12 +19,12 @@ jobs:
       - name: Install tools
         timeout-minutes: 8
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
-          pip install -q edge-tts==7.0.2 gTTS==2.5.4 playwright==1.47.0 pillow
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-montserrat >/dev/null
+          pip install -q edge-tts==7.0.2 gTTS==2.5.4 playwright==1.47.0 pillow gdown==5.2.0 faster-whisper==1.1.1
           for i in 1 2 3; do python -m playwright install --with-deps chromium >/dev/null && break; sleep 10; done
           npm install --prefix /tmp/rbrfonts @fontsource/montserrat@5.1.0 >/dev/null
       - name: Build pending jobs
-        timeout-minutes: 11
+        timeout-minutes: 22
         run: |
           set -e
           built=0
@@ -33,7 +33,7 @@ jobs:
             out=$(python -c "import json,sys;print(json.load(open('$j'))['out'])")
             if [ ! -e "$out" ]; then
               mkdir -p logs
-              if timeout 600 python -u scripts/build_job.py "$j" > logs/last-build.log 2>&1; then built=1; else
+              if timeout 1200 python -u scripts/build_job.py "$j" > logs/last-build.log 2>&1; then built=1; else
                 cp logs/last-build.log "logs/FAILED-$(basename "$j" .json).log"; built=1; fi
             fi
           done
