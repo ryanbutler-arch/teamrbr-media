@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -21,7 +21,7 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
           pip install -q edge-tts==7.0.2 gTTS==2.5.4 playwright==1.47.0 pillow
-          python -m playwright install --with-deps chromium >/dev/null
+          for i in 1 2 3; do python -m playwright install --with-deps chromium >/dev/null && break; sleep 10; done
           npm install --prefix /tmp/rbrfonts @fontsource/montserrat@5.1.0 >/dev/null
       - name: Build pending jobs
         timeout-minutes: 11
