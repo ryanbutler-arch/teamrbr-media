@@ -51,6 +51,7 @@ def build(job_path):
                 print("saved", name, how, im.size, flush=True); done.append(name); break
             except Exception as e:
                 print("fail", name, how, repr(e)[:200], flush=True)
+                if os.path.exists(p): os.remove(p)
                 if how == "hf" and "quota" in str(e).lower(): client = None
                 time.sleep(20 if how == "poll" else 2)
         time.sleep(4)

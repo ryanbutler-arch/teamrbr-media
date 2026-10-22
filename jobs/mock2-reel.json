@@ -1,0 +1,42 @@
+{
+ "out": "media/mock2/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {
+   "kicker": "Selling in George",
+   "headline": "Buyers decide in 10 seconds",
+   "body": "Here's what they notice first.",
+   "say": "Selling your home in George? Buyers decide in the first ten seconds. Here's what they notice.",
+   "bg": "tag:pool"
+  },
+  {
+   "kicker": "1 of 3",
+   "headline": "The front door",
+   "body": "A clean entrance and fresh paint set the tone.",
+   "say": "One. The front door. A clean entrance and fresh paint set the tone before they even step inside.",
+   "bg": "tag:entrance"
+  },
+  {
+   "kicker": "2 of 3",
+   "headline": "The smell",
+   "body": "Fresh air beats any air freshener.",
+   "say": "Two. The smell. Open the windows. Fresh air beats any air freshener.",
+   "bg": "tag:living"
+  },
+  {
+   "kicker": "3 of 3",
+   "headline": "The light",
+   "body": "Open every curtain. Switch on every light.",
+   "say": "Three. The light. Open every curtain and switch on every light. Bright rooms feel bigger.",
+   "bg": "tag:interior"
+  },
+  {
+   "kicker": "Team RBR",
+   "headline": "Want the full checklist?",
+   "body": "Plus a free market analysis of your home.",
+   "cta": "Comment MARKET",
+   "say": "Want my full seller checklist and a free market analysis? Comment market, and I'll send it to you. Or tap the link in my bio.",
+   "bg": "tag:dusk"
+  }
+ ]
+}

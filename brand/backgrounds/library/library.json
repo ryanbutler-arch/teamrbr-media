@@ -2,7 +2,8 @@
  {
   "file": "interior-living-3.jpg",
   "tags": [
-   "interior"
+   "interior",
+   "living"
   ],
   "license": "public domain",
   "source": "https://commons.wikimedia.org/wiki/File:Interior_view,_living_room,_the_Farnsworth_House,_Plano,_Illinois_LCCN2010630501.tif"
@@ -10,7 +11,8 @@
  {
   "file": "interior-living-4.jpg",
   "tags": [
-   "interior"
+   "interior",
+   "living"
   ],
   "license": "public domain",
   "source": "https://commons.wikimedia.org/wiki/File:Interior_view,_living_room,_the_Farnsworth_House,_Plano,_Illinois_LCCN2010630502.tif"
@@ -18,7 +20,8 @@
  {
   "file": "interior-living-5.jpg",
   "tags": [
-   "interior"
+   "interior",
+   "living"
   ],
   "license": "cc0",
   "source": "https://commons.wikimedia.org/wiki/File:Living_Room_Interior_Designer_-_Picker_Online.jpg"
@@ -26,7 +29,9 @@
  {
   "file": "mountain-outeniqua-2.jpg",
   "tags": [
-   "mountain"
+   "mountain",
+   "george",
+   "lifestyle"
   ],
   "license": "cc0",
   "source": "https://commons.wikimedia.org/wiki/File:Full_moon_sunset_(Unsplash).jpg"
@@ -34,7 +39,9 @@
  {
   "file": "mountain-outeniqua-3.jpg",
   "tags": [
-   "mountain"
+   "mountain",
+   "george",
+   "lifestyle"
   ],
   "license": "cc0",
   "source": "https://commons.wikimedia.org/wiki/File:George-_and_Cradock_peak.jpg"
@@ -42,7 +49,9 @@
  {
   "file": "coast-wilderness-4.jpg",
   "tags": [
-   "coast"
+   "coast",
+   "george",
+   "lifestyle"
   ],
   "license": "public domain",
   "source": "https://commons.wikimedia.org/wiki/File:Wilderness.jpg"
@@ -50,7 +59,9 @@
  {
   "file": "coast-wilderness-5.jpg",
   "tags": [
-   "coast"
+   "coast",
+   "george",
+   "lifestyle"
   ],
   "license": "cc0",
   "source": "https://commons.wikimedia.org/wiki/File:Wilderness_(27185222988).jpg"
@@ -58,7 +69,9 @@
  {
   "file": "nature-wilderness-6.jpg",
   "tags": [
-   "nature"
+   "nature",
+   "george",
+   "lifestyle"
   ],
   "license": "public domain",
   "source": "https://commons.wikimedia.org/wiki/File:Wilderness_National_Park.jpg"
@@ -86,10 +99,120 @@
   "tags": [
    "exterior",
    "pool",
-   "coast"
+   "coast",
+   "lifestyle"
   ],
   "license": "AI generated (Pollinations FLUX)",
   "source": null,
+  "ai": true
+ },
+ {
+  "file": "kitchen-c2-kitchen-1.jpg",
+  "tags": [
+   "kitchen",
+   "interior"
+  ],
+  "license": "cc0",
+  "source": "https://commons.wikimedia.org/wiki/File:Blue_white_kitchen_interior_(Unsplash).jpg"
+ },
+ {
+  "file": "living-c2-living-1.jpg",
+  "tags": [
+   "living",
+   "interior"
+  ],
+  "license": "cc0",
+  "source": "https://commons.wikimedia.org/wiki/File:Living_room_(Unsplash).jpg"
+ },
+ {
+  "file": "interior-c2-interior-1.jpg",
+  "tags": [
+   "interior"
+  ],
+  "license": "cc0",
+  "source": "https://commons.wikimedia.org/wiki/File:Pexels-atbo-245208.jpg"
+ },
+ {
+  "file": "ai2-bathroom-1.jpg",
+  "tags": [
+   "bathroom",
+   "interior"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai2-entrance-1.jpg",
+  "tags": [
+   "entrance",
+   "exterior"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai2-exterior-1.jpg",
+  "tags": [
+   "exterior",
+   "george"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai2-kitchen-2.jpg",
+  "tags": [
+   "kitchen",
+   "interior"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai2-living-1.jpg",
+  "tags": [
+   "living",
+   "interior"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai2-patio-1.jpg",
+  "tags": [
+   "patio",
+   "lifestyle",
+   "george"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai2-pool-1.jpg",
+  "tags": [
+   "pool",
+   "exterior",
+   "lifestyle"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai2-sold-1.jpg",
+  "tags": [
+   "exterior",
+   "dusk"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai2-study-1.jpg",
+  "tags": [
+   "interior",
+   "study"
+  ],
+  "license": "AI generated (FLUX)",
   "ai": true
  }
 ]

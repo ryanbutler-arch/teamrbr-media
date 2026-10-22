@@ -31,7 +31,7 @@ BANNED = ("realty", "valuation")
 LIB = os.path.join(REPO, "brand", "backgrounds", "library")
 
 
-def pick_bg(s, spec, i):
+def pick_bg(s, spec, i, used=None):
     """Background photo for slide i. Slide/spec "bg" may be a repo path, "tag:<tag>" or "none".
     Default: rotate through the library, seeded by the job text so neighbouring days differ."""
     want = s.get("bg", spec.get("bg", "auto"))
@@ -44,12 +44,17 @@ def pick_bg(s, spec, i):
         lib = json.load(open(os.path.join(LIB, "library.json")))
     except Exception:
         return None
-    if want.startswith("tag:"):
-        lib = [m for m in lib if want[4:] in m["tags"]] or lib
     if not lib:
         return None
+    used = used if used is not None else set()
+    if want.startswith("tag:"):
+        tagged = [m for m in lib if want[4:] in m["tags"] and m["file"] not in used]
+        lib = tagged or lib
     seed = int(hashlib.md5(json.dumps(spec.get("slides", []))[:400].encode()).hexdigest(), 16)
-    return os.path.join(LIB, lib[(seed + i) % len(lib)]["file"])
+    order = [lib[(seed + i + k) % len(lib)]["file"] for k in range(len(lib))]
+    f = next((x for x in order if x not in used), order[0])
+    used.add(f)
+    return os.path.join(LIB, f)
 
 
 def fit_bg(path, h):
@@ -119,12 +124,12 @@ async def render(spec, out, layers=False):
     the text/branding layer with transparency, and the photo fitted to the frame (for Reel zooms)."""
     h = 1350 if spec.get("type") == "carousel" else 1920
     style, logo = css(h), b64(LOGO, "image/png")
-    paths, lay = [], []
+    paths, lay, used = [], [], set()
     async with async_playwright() as p:
         b = await p.chromium.launch()
         pg = await b.new_page(viewport={"width": 1080, "height": h})
         for i, s in enumerate(spec["slides"]):
-            bgp = pick_bg(s, spec, i)
+            bgp = pick_bg(s, spec, i, used)
             im, uri = fit_bg(bgp, h) if bgp else (None, None)
             await pg.set_content(slide_html(s, style, logo, uri))
             await pg.evaluate("document.fonts.ready")
