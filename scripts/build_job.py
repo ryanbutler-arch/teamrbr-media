@@ -82,7 +82,10 @@ def build(job_path):
 if __name__ == "__main__":
     for p in sys.argv[1:]:
         t = json.load(open(p)).get("type")
-        if t == "backgrounds":
+        if t == "ai_backgrounds":
+            import ai_bg
+            print("built", ai_bg.build(p))
+        elif t == "backgrounds":
             import fetch_bg
             print("built", fetch_bg.build(p))
         elif t == "clip":
