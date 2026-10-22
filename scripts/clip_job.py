@@ -32,7 +32,11 @@ def ts(t):
 def captions(video, ass_path, max_s):
     from faster_whisper import WhisperModel
     model = WhisperModel("small", device="cpu", compute_type="int8")
-    segs, _ = model.transcribe(video, language="en", word_timestamps=True, vad_filter=True)
+    import numpy as np
+    pcm = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", video, "-f", "s16le", "-ac", "1",
+                          "-ar", "16000", "-"], capture_output=True, check=True).stdout
+    audio = np.frombuffer(pcm, np.int16).astype(np.float32) / 32768.0
+    segs, _ = model.transcribe(audio, language="en", word_timestamps=True, vad_filter=True)
     words = [w for s in segs for w in (s.words or []) if w.start < max_s]
     lines, cur = [], []
     for w in words:
