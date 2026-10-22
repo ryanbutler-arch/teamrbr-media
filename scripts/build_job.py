@@ -47,9 +47,15 @@ def build(job_path):
     job = json.load(open(job_path))
     make_post.check_wording(job)
     out = job["out"]
-    os.makedirs(os.path.dirname(out), exist_ok=True)
+    os.makedirs(os.path.dirname(out.rstrip('/')) or '.', exist_ok=True)
     tmp = tempfile.mkdtemp()
     pngs = asyncio.run(make_post.render(job, tmp))
+    if job.get("type") == "carousel":
+        from PIL import Image
+        os.makedirs(out, exist_ok=True)
+        for i, png in enumerate(pngs, 1):
+            Image.open(png).convert("RGB").save(os.path.join(out, f"slide-{i}.jpg"), quality=90)
+        return out
     if job.get("type") == "story":
         from PIL import Image
         Image.open(pngs[0]).convert("RGB").save(out, quality=90)

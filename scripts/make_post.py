@@ -35,14 +35,14 @@ def b64(path, mime):
         return f"data:{mime};base64," + base64.b64encode(f.read()).decode()
 
 
-def css():
+def css(h=1920):
     faces = "".join(
         f"@font-face{{font-family:M;src:url({b64(f'{FONT_DIR}/montserrat-latin-{w}-normal.woff2','font/woff2')});font-weight:{w}}}"
         for w in (400, 700, 800)
     )
-    return faces + """
+    return faces + ("""
 *{margin:0;box-sizing:border-box}
-body{width:1080px;height:1920px;font-family:M;background:#2B2B2B;color:#fff;display:flex;flex-direction:column;
+body{width:1080px;height:__H__px;font-family:M;background:#2B2B2B;color:#fff;display:flex;flex-direction:column;
 justify-content:center;padding:120px 96px 330px;position:relative;overflow:hidden}
 .bar{position:absolute;top:0;left:0;right:0;height:24px;background:#B40101}
 .kick{color:#B40101;font-weight:800;font-size:40px;letter-spacing:6px;text-transform:uppercase;margin-bottom:40px}
@@ -52,7 +52,10 @@ p{font-size:50px;line-height:1.35;margin-top:52px;color:#e6e6e6}
 .foot{position:absolute;bottom:0;left:0;right:0;height:230px;background:#fff;display:flex;align-items:center;
 justify-content:space-between;padding:0 72px;color:#2B2B2B;font-size:27px;font-weight:700;line-height:1.5}
 .foot img{height:120px}
-"""
+""").replace("__H__", str(h)) + ("" if h >= 1600 else """
+body{padding:90px 84px 290px} h1{font-size:92px} p{font-size:44px;margin-top:40px} .cta{margin-top:48px;font-size:46px;padding:28px 46px}
+.foot{height:200px} .foot img{height:104px}
+""")
 
 
 def slide_html(s, style, logo):
@@ -73,11 +76,12 @@ def check_wording(spec):
 
 
 async def render(spec, out):
-    style, logo = css(), b64(LOGO, "image/png")
+    h = 1350 if spec.get("type") == "carousel" else 1920
+    style, logo = css(h), b64(LOGO, "image/png")
     paths = []
     async with async_playwright() as p:
         b = await p.chromium.launch()
-        pg = await b.new_page(viewport={"width": 1080, "height": 1920})
+        pg = await b.new_page(viewport={"width": 1080, "height": h})
         for i, s in enumerate(spec["slides"]):
             await pg.set_content(slide_html(s, style, logo))
             await pg.evaluate("document.fonts.ready")
