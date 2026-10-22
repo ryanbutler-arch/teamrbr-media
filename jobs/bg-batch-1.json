@@ -1,12 +1,12 @@
 {"type":"backgrounds","out":"brand/backgrounds/candidates/batch1","per_query":6,
  "queries":{
   "exterior":"modern house exterior",
-  "facade":"family home front garden",
-  "living":"living room interior",
+  "home":"suburban house front yard",
+  "living":"living room interior design",
   "kitchen":"modern kitchen interior",
-  "bedroom":"bedroom interior bright",
-  "pool":"house swimming pool garden",
-  "mountain":"house mountains view",
-  "coast":"coastal town houses",
-  "keys":"house keys new home",
-  "street":"suburban street houses"}}
+  "bedroom":"bedroom interior",
+  "pool":"swimming pool house",
+  "george":"George Western Cape",
+  "outeniqua":"Outeniqua mountains",
+  "wilderness":"Wilderness Western Cape",
+  "keys":"house keys"}}

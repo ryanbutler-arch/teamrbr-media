@@ -15,12 +15,24 @@ def build(job_path):
     job = json.load(open(job_path)); out = job["out"]; os.makedirs(out, exist_ok=True)
     meta = []
     for tag, q in job["queries"].items():
-        api = ("https://api.openverse.org/v1/images/?" + urllib.parse.urlencode(
-            {"q": q, "license": "cc0,pdm", "size": "large", "page_size": 30, "mature": "false"}))
+        api = ("https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({
+            "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
+            "gsrsearch": q + " filetype:bitmap", "gsrlimit": 50, "prop": "imageinfo",
+            "iiprop": "url|size|extmetadata", "iiurlwidth": 1600}))
         try:
-            results = json.loads(get(api)).get("results", [])
+            pages = json.loads(get(api)).get("query", {}).get("pages", {}).values()
         except Exception as e:
             print("search failed", tag, e, flush=True); continue
+        results = []
+        for pg in pages:
+            ii = (pg.get("imageinfo") or [{}])[0]; md = ii.get("extmetadata", {})
+            lic = (md.get("LicenseShortName", {}).get("value") or "").lower()
+            if not ("cc0" in lic or "public domain" in lic or lic == "pd"): continue
+            if min(ii.get("width", 0), ii.get("height", 0)) < 1000: continue
+            results.append({"url": ii.get("thumburl") or ii.get("url"), "title": pg.get("title"),
+                            "creator": md.get("Artist", {}).get("value"), "license": lic,
+                            "foreign_landing_url": ii.get("descriptionurl")})
+        print(tag, "usable results:", len(results), flush=True)
         n = 0
         for r in results:
             if n >= job.get("per_query", 6): break
