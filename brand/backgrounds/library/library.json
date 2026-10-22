@@ -214,5 +214,43 @@
   ],
   "license": "AI generated (FLUX)",
   "ai": true
+ },
+ {
+  "file": "ai3-bedroom-1.jpg",
+  "tags": [
+   "bedroom",
+   "interior"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai3-dining-1.jpg",
+  "tags": [
+   "dining",
+   "interior"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai3-estate-1.jpg",
+  "tags": [
+   "estate",
+   "exterior",
+   "george"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
+ },
+ {
+  "file": "ai3-lounge-2.jpg",
+  "tags": [
+   "living",
+   "interior",
+   "winter"
+  ],
+  "license": "AI generated (FLUX)",
+  "ai": true
  }
 ]
