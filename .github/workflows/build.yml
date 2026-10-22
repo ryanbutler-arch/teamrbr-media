@@ -7,21 +7,24 @@ permissions:
   contents: write
 concurrency:
   group: build-media
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - name: Install tools
+        timeout-minutes: 8
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
-          pip install -q edge-tts==7.0.2 playwright==1.47.0 pillow
+          pip install -q edge-tts==7.0.2 gTTS==2.5.4 playwright==1.47.0 pillow
           python -m playwright install --with-deps chromium >/dev/null
           npm install --prefix /tmp/rbrfonts @fontsource/montserrat@5.1.0 >/dev/null
       - name: Build pending jobs
+        timeout-minutes: 11
         run: |
           set -e
           built=0
@@ -30,17 +33,16 @@ jobs:
             out=$(python -c "import json,sys;print(json.load(open('$j'))['out'])")
             if [ ! -e "$out" ]; then
               mkdir -p logs
-              if python scripts/build_job.py "$j" > logs/last-build.log 2>&1; then built=1; else
+              if timeout 600 python -u scripts/build_job.py "$j" > logs/last-build.log 2>&1; then built=1; else
                 cp logs/last-build.log "logs/FAILED-$(basename "$j" .json).log"; built=1; fi
             fi
           done
           echo "built=$built" >> $GITHUB_ENV
       - name: Commit outputs
-        if: env.built == '1'
+        if: always()
         run: |
           git config user.name "teamrbr-bot"
           git config user.email "ryan.butler@kwsa.co.za"
-          git add media logs 2>/dev/null || true
-          git add media || true
-          git commit -m "Build media from jobs"
+          for d in media logs; do [ -d "$d" ] && git add "$d"; done
+          git diff --cached --quiet || git commit -m "Build media from jobs"
           git push

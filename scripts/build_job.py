@@ -22,9 +22,21 @@ def dur(path):
                           "-of", "csv=p=0", path], capture_output=True, text=True, check=True)
     return float(out.stdout.strip())
 
-async def tts(text, voice, path):
+async def _edge(text, voice, path):
     import edge_tts
     await edge_tts.Communicate(text, voice, rate="+5%").save(path)
+
+def tts(text, voice, path):
+    """Microsoft neural voice first (45 s limit), then Google's South African English voice."""
+    try:
+        asyncio.run(asyncio.wait_for(_edge(text, voice, path), 45))
+        if os.path.getsize(path) > 1000:
+            print("voice: edge", voice, flush=True); return
+    except Exception as e:
+        print("edge-tts failed:", repr(e), flush=True)
+    from gtts import gTTS
+    gTTS(text, lang="en", tld="co.za").save(path)
+    print("voice: gtts en-ZA", flush=True)
 
 def build(job_path):
     job = json.load(open(job_path))
@@ -42,7 +54,7 @@ def build(job_path):
     for i, (png, s) in enumerate(zip(pngs, job["slides"])):
         say = s.get("say") or " ".join(x for x in (s.get("headline"), s.get("body")) if x)
         mp3 = os.path.join(tmp, f"v{i}.mp3")
-        asyncio.run(tts(say, voice, mp3))
+        tts(say, voice, mp3)
         d = max(2.5, dur(mp3) + 0.5)
         seg = os.path.join(tmp, f"s{i}.mp4")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-loop", "1", "-i", png, "-i", mp3,
