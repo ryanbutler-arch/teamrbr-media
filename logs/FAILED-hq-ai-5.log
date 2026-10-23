@@ -1,0 +1,6 @@
+
+[notice] A new release of pip is available: 26.2.1 -> 26.2.2
+[notice] To update, run: pip install --upgrade pip
+Loaded as API: https://black-forest-labs-flux-1-schnell.hf.space
+fail dusk-2 hf AppError('You have exceeded your ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens')
+no images generated

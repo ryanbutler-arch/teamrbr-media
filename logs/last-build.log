@@ -1,10 +1,6 @@
-ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-gtts 2.5.4 requires click<8.2,>=7.1, but you have click 8.5.0 which is incompatible.
 
 [notice] A new release of pip is available: 26.2.1 -> 26.2.2
 [notice] To update, run: pip install --upgrade pip
 Loaded as API: https://black-forest-labs-flux-1-schnell.hf.space
-saved bedroom-1 hf (1088, 1920)
-saved patio-1 hf (1088, 1920)
-saved bathroom-1 hf (1088, 1920)
-built brand/backgrounds/hq/ai-3
+fail dusk-2 hf AppError('You have exceeded your ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens')
+no images generated
