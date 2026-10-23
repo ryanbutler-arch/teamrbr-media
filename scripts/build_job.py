@@ -18,9 +18,15 @@ sys.path.insert(0, os.path.dirname(__file__))
 import make_post  # noqa: E402
 
 def dur(path):
-    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                          "-of", "csv=p=0", path], capture_output=True, text=True, check=True)
-    return float(out.stdout.strip())
+    import shutil, re
+    if shutil.which("ffprobe"):
+        out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                              "-of", "csv=p=0", path], capture_output=True, text=True, check=True)
+        return float(out.stdout.strip())
+    # no ffprobe (pip static ffmpeg): read "Duration: HH:MM:SS.xx" from ffmpeg's banner
+    err = subprocess.run(["ffmpeg", "-hide_banner", "-i", path], capture_output=True, text=True).stderr
+    h, m, sec = re.search(r"Duration: (\d+):(\d+):([\d.]+)", err).groups()
+    return int(h) * 3600 + int(m) * 60 + float(sec)
 
 async def _edge(text, voice, path):
     import edge_tts

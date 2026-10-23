@@ -36,8 +36,14 @@ jobs:
           echo 'set man-db/auto-update false' | sudo debconf-communicate >/dev/null 2>&1 || true
           pip install -q gTTS==2.5.4 edge-tts==7.0.2 playwright==1.47.0 pillow
           if [ "$NEEDCLIP" = "1" ]; then pip install -q gdown==5.2.0 faster-whisper==1.1.1; fi
-          which ffmpeg || timeout 300 sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null || \
-            (timeout 180 sudo apt-get update -qq && timeout 300 sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null)
+          if ! which ffmpeg; then
+            # apt mirror can hang; use pip's static ffmpeg first, apt only as a fallback for clip jobs
+            pip install -q imageio-ffmpeg==0.5.1 && sudo ln -sf "$(python -c 'import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+            if [ "$NEEDCLIP" = "1" ] || ! which ffmpeg; then
+              timeout 240 sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null || \
+                (timeout 120 sudo apt-get update -qq && timeout 240 sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null) || which ffmpeg
+            fi
+          fi
           for i in 1 2 3; do timeout 240 python -m playwright install chromium >/dev/null && break; sleep 10; done
           timeout 180 npm install --prefix /tmp/rbrfonts @fontsource/montserrat@5.1.0 >/dev/null
       - name: Build pending jobs
