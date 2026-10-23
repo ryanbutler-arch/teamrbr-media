@@ -1,0 +1,9 @@
+{
+ "type": "ai_backgrounds",
+ "out": "brand/backgrounds/hq/ai-6",
+ "images": {
+  "lounge-1": "cosy family lounge with a fireplace, soft armchairs, bookshelves and big windows with a forest view, warm light",
+  "entrance-2": "modern home entrance with a large pivot front door, timber cladding, plants and a paved path, bright morning",
+  "aerial-1": "aerial drone view of a leafy residential suburb with modern homes and green mountains in the distance, clear day"
+ }
+}
