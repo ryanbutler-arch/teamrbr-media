@@ -239,5 +239,47 @@
    3600,
    2400
   ]
+ },
+ {
+  "file": "hq-ai-6-aerial-1.jpg",
+  "tags": [
+   "george",
+   "aerial",
+   "lifestyle",
+   "estate"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-ai-6-entrance-2.jpg",
+  "tags": [
+   "entrance",
+   "exterior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-ai-6-lounge-1.jpg",
+  "tags": [
+   "living",
+   "interior",
+   "winter"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
  }
 ]
