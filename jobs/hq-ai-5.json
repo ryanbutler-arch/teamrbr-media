@@ -1,0 +1,9 @@
+{
+ "type": "ai_backgrounds",
+ "out": "brand/backgrounds/hq/ai-5",
+ "images": {
+  "dusk-2": "modern double-storey home at dusk with warm interior lights glowing through large windows, landscaped garden lit by path lights",
+  "dining-1": "bright open dining area with a solid wood table, rattan chairs and pendant lights, glass doors to a garden",
+  "coast-1": "modern home with large windows and a deck overlooking a beach and the ocean, blue sky, Garden Route coastline"
+ }
+}
