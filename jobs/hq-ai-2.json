@@ -1,0 +1,9 @@
+{
+ "type": "ai_backgrounds",
+ "out": "brand/backgrounds/hq/ai-2",
+ "images": {
+  "kitchen-1": "bright modern open-plan kitchen with white shaker cabinets, oak countertops, pendant lights and large windows onto a green garden",
+  "living-1": "airy modern living room with large sliding glass doors open to a patio and garden, light oak floors, linen sofa, afternoon sun",
+  "exterior-1": "contemporary South African family home with white walls, timber accents and a double garage, neat lawn, green mountains behind, clear blue sky"
+ }
+}
