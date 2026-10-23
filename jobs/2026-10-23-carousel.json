@@ -1,0 +1,49 @@
+{
+ "out": "media/2026-10-23/carousel",
+ "type": "carousel",
+ "slides": [
+  {
+   "kicker": "Selling in George",
+   "headline": "5 pricing mistakes that cost sellers",
+   "body": "Save this before you list.",
+   "bg": "tag:george"
+  },
+  {
+   "kicker": "Mistake 1",
+   "headline": "Pricing on what you need",
+   "body": "Buyers pay what the market supports, not what your bond needs.",
+   "bg": "tag:dining"
+  },
+  {
+   "kicker": "Mistake 2",
+   "headline": "Testing the market high",
+   "body": "Overpriced homes sit. Then buyers start asking what's wrong with them.",
+   "bg": "tag:interior"
+  },
+  {
+   "kicker": "Mistake 3",
+   "headline": "Using old sales",
+   "body": "What sold two years ago says little about today's buyers.",
+   "bg": "tag:estate"
+  },
+  {
+   "kicker": "Mistake 4",
+   "headline": "Ignoring the competition",
+   "body": "Buyers compare your home with everything else for sale in your suburb.",
+   "bg": "tag:living"
+  },
+  {
+   "kicker": "Mistake 5",
+   "headline": "Pricing what you spent",
+   "body": "Renovations add appeal, but rarely add value rand for rand.",
+   "bg": "tag:garden"
+  },
+  {
+   "kicker": "Team RBR",
+   "headline": "Want your real number?",
+   "body": "I'll compare recent sales around you in a free market analysis. No obligation.",
+   "cta": "Comment MARKET",
+   "bg": "tag:exterior"
+  }
+ ]
+}

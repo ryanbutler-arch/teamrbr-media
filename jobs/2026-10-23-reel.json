@@ -1,0 +1,42 @@
+{
+ "out": "media/2026-10-23/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {
+   "kicker": "Selling in George",
+   "headline": "Don't renovate before you sell",
+   "body": "Do this instead.",
+   "say": "Selling in George? Don't renovate before you sell. Do this instead.",
+   "bg": "tag:exterior"
+  },
+  {
+   "kicker": "The myth",
+   "headline": "A new kitchen sells it",
+   "body": "Many buyers want to choose their own finishes.",
+   "say": "Big renovations rarely pay back rand for rand. And many buyers want to choose their own finishes anyway.",
+   "bg": "tag:kitchen"
+  },
+  {
+   "kicker": "Instead",
+   "headline": "Fix the small things",
+   "body": "Leaky taps, loose handles, sticking doors.",
+   "say": "Instead, fix the small things. Leaky taps, loose handles, sticking doors.",
+   "bg": "tag:bathroom"
+  },
+  {
+   "kicker": "Then",
+   "headline": "Clean, declutter, paint",
+   "body": "Fresh, neutral rooms look better in photos.",
+   "say": "Then clean, declutter and touch up the paint. Fresh, neutral rooms look better in photos.",
+   "bg": "tag:living"
+  },
+  {
+   "kicker": "Team RBR",
+   "headline": "Want my seller checklist?",
+   "body": "Plus a free market analysis of your home.",
+   "cta": "Comment MARKET",
+   "say": "Want my full checklist and a free market analysis? Comment market and I'll send it to you. Or tap the link in my bio.",
+   "bg": "tag:dusk"
+  }
+ ]
+}
