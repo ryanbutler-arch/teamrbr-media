@@ -18,7 +18,7 @@ def build(job_path):
         api = ("https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode({
             "action": "query", "format": "json", "generator": "search", "gsrnamespace": 6,
             "gsrsearch": q + " filetype:bitmap", "gsrlimit": 50, "prop": "imageinfo",
-            "iiprop": "url|size|extmetadata", "iiurlwidth": 2400}))
+            "iiprop": "url|size|extmetadata", "iiurlheight": 2400}))
         try:
             pages = json.loads(get(api)).get("query", {}).get("pages", {}).values()
         except Exception as e:
@@ -28,7 +28,7 @@ def build(job_path):
             ii = (pg.get("imageinfo") or [{}])[0]; md = ii.get("extmetadata", {})
             lic = (md.get("LicenseShortName", {}).get("value") or "").lower()
             if not ("cc0" in lic or "public domain" in lic or lic == "pd"): continue
-            if min(ii.get("width", 0), ii.get("height", 0)) < 1000: continue
+            if ii.get("height", 0) < 1920 or ii.get("width", 0) < 1080: continue
             results.append({"url": ii.get("thumburl") or ii.get("url"), "title": pg.get("title"),
                             "creator": md.get("Artist", {}).get("value"), "license": lic,
                             "foreign_landing_url": ii.get("descriptionurl")})
@@ -40,8 +40,8 @@ def build(job_path):
                 data = get(r["url"]); tmp = os.path.join(out, "tmp")
                 open(tmp, "wb").write(data)
                 im = Image.open(tmp).convert("RGB")
-                if min(im.size) < 900: continue
-                im.thumbnail((2400, 2400))
+                if im.height < 1920 or im.width < 1080: continue
+                im.thumbnail((4000, 2400))
                 name = f"{tag}-{n+1}.jpg"; im.save(os.path.join(out, name), quality=85)
                 meta.append({"file": name, "tag": tag, "title": r.get("title"), "creator": r.get("creator"),
                              "license": r.get("license"), "source": r.get("foreign_landing_url")})

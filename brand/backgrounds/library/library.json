@@ -1,119 +1,16 @@
 [
  {
-  "file": "interior-living-3.jpg",
-  "tags": [
-   "interior",
-   "living"
-  ],
-  "license": "public domain",
-  "source": "https://commons.wikimedia.org/wiki/File:Interior_view,_living_room,_the_Farnsworth_House,_Plano,_Illinois_LCCN2010630501.tif"
- },
- {
-  "file": "interior-living-4.jpg",
-  "tags": [
-   "interior",
-   "living"
-  ],
-  "license": "public domain",
-  "source": "https://commons.wikimedia.org/wiki/File:Interior_view,_living_room,_the_Farnsworth_House,_Plano,_Illinois_LCCN2010630502.tif"
- },
- {
-  "file": "interior-living-5.jpg",
-  "tags": [
-   "interior",
-   "living"
-  ],
-  "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:Living_Room_Interior_Designer_-_Picker_Online.jpg"
- },
- {
-  "file": "mountain-outeniqua-2.jpg",
-  "tags": [
-   "mountain",
-   "george",
-   "lifestyle"
-  ],
-  "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:Full_moon_sunset_(Unsplash).jpg"
- },
- {
-  "file": "mountain-outeniqua-3.jpg",
-  "tags": [
-   "mountain",
-   "george",
-   "lifestyle"
-  ],
-  "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:George-_and_Cradock_peak.jpg"
- },
- {
-  "file": "coast-wilderness-4.jpg",
-  "tags": [
-   "coast",
-   "george",
-   "lifestyle"
-  ],
-  "license": "public domain",
-  "source": "https://commons.wikimedia.org/wiki/File:Wilderness.jpg"
- },
- {
-  "file": "coast-wilderness-5.jpg",
-  "tags": [
-   "coast",
-   "george",
-   "lifestyle"
-  ],
-  "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:Wilderness_(27185222988).jpg"
- },
- {
-  "file": "nature-wilderness-6.jpg",
-  "tags": [
-   "nature",
-   "george",
-   "lifestyle"
-  ],
-  "license": "public domain",
-  "source": "https://commons.wikimedia.org/wiki/File:Wilderness_National_Park.jpg"
- },
- {
-  "file": "exterior-exterior-6.jpg",
-  "tags": [
-   "exterior"
-  ],
-  "license": "public domain",
-  "source": "https://commons.wikimedia.org/wiki/File:The_1951_Mies_van_der_Rohe-designed_Farnsworth_House,_an_icon_of_20th_century_modern_architecture_in_Plano,_Illinois,_is_owned_by_the_National_Trust_for_Historic_Preservation_LCCN2011636469.tif"
- },
- {
-  "file": "ai-kitchen-1.jpg",
-  "tags": [
-   "kitchen",
-   "interior"
-  ],
-  "license": "AI generated (Pollinations FLUX)",
-  "source": null,
-  "ai": true
- },
- {
-  "file": "ai-coast-1.jpg",
-  "tags": [
-   "exterior",
-   "pool",
-   "coast",
-   "lifestyle"
-  ],
-  "license": "AI generated (Pollinations FLUX)",
-  "source": null,
-  "ai": true
- },
- {
   "file": "kitchen-c2-kitchen-1.jpg",
   "tags": [
    "kitchen",
    "interior"
   ],
   "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:Blue_white_kitchen_interior_(Unsplash).jpg"
+  "source": "https://commons.wikimedia.org/wiki/File:Blue_white_kitchen_interior_(Unsplash).jpg",
+  "size": [
+   2400,
+   1600
+  ]
  },
  {
   "file": "living-c2-living-1.jpg",
@@ -122,7 +19,11 @@
    "interior"
   ],
   "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:Living_room_(Unsplash).jpg"
+  "source": "https://commons.wikimedia.org/wiki/File:Living_room_(Unsplash).jpg",
+  "size": [
+   2400,
+   1602
+  ]
  },
  {
   "file": "interior-c2-interior-1.jpg",
@@ -130,25 +31,11 @@
    "interior"
   ],
   "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:Pexels-atbo-245208.jpg"
- },
- {
-  "file": "ai2-bathroom-1.jpg",
-  "tags": [
-   "bathroom",
-   "interior"
-  ],
-  "license": "AI generated (FLUX)",
-  "ai": true
- },
- {
-  "file": "ai2-entrance-1.jpg",
-  "tags": [
-   "entrance",
-   "exterior"
-  ],
-  "license": "AI generated (FLUX)",
-  "ai": true
+  "source": "https://commons.wikimedia.org/wiki/File:Pexels-atbo-245208.jpg",
+  "size": [
+   2400,
+   1733
+  ]
  },
  {
   "file": "ai2-exterior-1.jpg",
@@ -157,7 +44,11 @@
    "george"
   ],
   "license": "AI generated (FLUX)",
-  "ai": true
+  "ai": true,
+  "size": [
+   896,
+   1600
+  ]
  },
  {
   "file": "ai2-kitchen-2.jpg",
@@ -166,7 +57,11 @@
    "interior"
   ],
   "license": "AI generated (FLUX)",
-  "ai": true
+  "ai": true,
+  "size": [
+   896,
+   1600
+  ]
  },
  {
   "file": "ai2-living-1.jpg",
@@ -175,45 +70,11 @@
    "interior"
   ],
   "license": "AI generated (FLUX)",
-  "ai": true
- },
- {
-  "file": "ai2-patio-1.jpg",
-  "tags": [
-   "patio",
-   "lifestyle",
-   "george"
-  ],
-  "license": "AI generated (FLUX)",
-  "ai": true
- },
- {
-  "file": "ai2-pool-1.jpg",
-  "tags": [
-   "pool",
-   "exterior",
-   "lifestyle"
-  ],
-  "license": "AI generated (FLUX)",
-  "ai": true
- },
- {
-  "file": "ai2-sold-1.jpg",
-  "tags": [
-   "exterior",
-   "dusk"
-  ],
-  "license": "AI generated (FLUX)",
-  "ai": true
- },
- {
-  "file": "ai2-study-1.jpg",
-  "tags": [
-   "interior",
-   "study"
-  ],
-  "license": "AI generated (FLUX)",
-  "ai": true
+  "ai": true,
+  "size": [
+   896,
+   1600
+  ]
  },
  {
   "file": "ai3-bedroom-1.jpg",
@@ -222,7 +83,11 @@
    "interior"
   ],
   "license": "AI generated (FLUX)",
-  "ai": true
+  "ai": true,
+  "size": [
+   896,
+   1600
+  ]
  },
  {
   "file": "ai3-dining-1.jpg",
@@ -231,7 +96,11 @@
    "interior"
   ],
   "license": "AI generated (FLUX)",
-  "ai": true
+  "ai": true,
+  "size": [
+   896,
+   1600
+  ]
  },
  {
   "file": "ai3-estate-1.jpg",
@@ -241,16 +110,10 @@
    "george"
   ],
   "license": "AI generated (FLUX)",
-  "ai": true
- },
- {
-  "file": "ai3-lounge-2.jpg",
-  "tags": [
-   "living",
-   "interior",
-   "winter"
-  ],
-  "license": "AI generated (FLUX)",
-  "ai": true
+  "ai": true,
+  "size": [
+   896,
+   1600
+  ]
  }
 ]

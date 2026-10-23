@@ -1,0 +1,9 @@
+{
+ "type": "ai_backgrounds",
+ "out": "brand/backgrounds/hq/ai-1",
+ "images": {
+  "dusk-1": "modern family home exterior at blue hour with warm lights glowing in every window, neat lawn and driveway, sharp architectural photography",
+  "entrance-1": "wide front door of a modern home with a covered porch, potted plants and a stone path, soft morning light",
+  "pool-1": "sparkling swimming pool beside a modern house with a covered patio and loungers, lush garden, bright sunny day"
+ }
+}

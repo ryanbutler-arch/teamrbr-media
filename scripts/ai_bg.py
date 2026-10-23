@@ -7,7 +7,7 @@ from PIL import Image
 
 STYLE = (", photorealistic professional real estate photography, natural light, high detail, "
          "no people, no text, no watermark, no logos")
-W, H = 896, 1600
+W, H = 1088, 1920  # full Story/Reel size, no upscaling needed
 
 
 def hf_client():
@@ -40,14 +40,17 @@ def build(job_path):
     client = hf_client(); done = []
     for i, (name, prompt) in enumerate(job["images"].items()):
         p = os.path.join(out, name + ".jpg"); full = prompt + STYLE; seed = 1000 + i
-        for how in ("hf", "poll", "poll"):
+        for how in ("hf",):  # Pollinations dropped: its free tier returns ~576px images (too soft)
             try:
                 if how == "hf":
                     if not client: continue
                     via_hf(client, full, seed, p)
                 else:
                     via_pollinations(full, seed, p)
-                im = Image.open(p).convert("RGB"); im.save(p, quality=90)
+                im = Image.open(p).convert("RGB")
+                if im.width < 1000 or im.height < 1800:
+                    raise ValueError(f"too small {im.size}")
+                im.save(p, quality=92)
                 print("saved", name, how, im.size, flush=True); done.append(name); break
             except Exception as e:
                 print("fail", name, how, repr(e)[:200], flush=True)

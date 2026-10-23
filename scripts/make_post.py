@@ -29,6 +29,7 @@ LOGO = os.path.join(REPO, "brand", "kw-eden-logo.png")
 FOOTER = ("Ryan Butler", "Team RBR", "083 281 7918")
 BANNED = ("realty", "valuation")
 LIB = os.path.join(REPO, "brand", "backgrounds", "library")
+MAX_UPSCALE = 1.25  # never stretch a photo more than 25%
 
 
 def pick_bg(s, spec, i, used=None):
@@ -44,6 +45,16 @@ def pick_bg(s, spec, i, used=None):
         lib = json.load(open(os.path.join(LIB, "library.json")))
     except Exception:
         return None
+    # quality gate: only photos that fill the frame at (near) native resolution
+    from PIL import Image
+    h = 1350 if spec.get("type") == "carousel" else 1920
+    def sharp_enough(m):
+        try:
+            w0, h0 = m.get("size") or Image.open(os.path.join(LIB, m["file"])).size
+        except Exception:
+            return False
+        return max(1080 / w0, h / h0) <= MAX_UPSCALE
+    lib = [m for m in lib if sharp_enough(m)]
     if not lib:
         return None
     used = used if used is not None else set()
