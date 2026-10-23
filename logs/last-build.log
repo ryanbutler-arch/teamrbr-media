@@ -4,7 +4,7 @@ gtts 2.5.4 requires click<8.2,>=7.1, but you have click 8.5.0 which is incompati
 [notice] A new release of pip is available: 26.2.1 -> 26.2.2
 [notice] To update, run: pip install --upgrade pip
 Loaded as API: https://black-forest-labs-flux-1-schnell.hf.space
-saved kitchen-1 hf (1088, 1920)
-saved living-1 hf (1088, 1920)
-saved exterior-1 hf (1088, 1920)
-built brand/backgrounds/hq/ai-2
+saved bedroom-1 hf (1088, 1920)
+saved patio-1 hf (1088, 1920)
+saved bathroom-1 hf (1088, 1920)
+built brand/backgrounds/hq/ai-3
