@@ -1,0 +1,9 @@
+{
+ "type": "ai_backgrounds",
+ "out": "brand/backgrounds/hq/ai-4",
+ "images": {
+  "estate-1": "quiet tree-lined street in a secure residential estate with modern double-storey homes and green lawns, morning light",
+  "garden-1": "lush landscaped back garden of a modern family home with a lawn, fynbos plants and a wooden deck, sunny day",
+  "exterior-2": "modern farmhouse style home with a wide verandah, gable roof and green lawn, mountains in the background, late afternoon"
+ }
+}
