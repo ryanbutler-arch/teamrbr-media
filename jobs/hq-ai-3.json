@@ -1,0 +1,9 @@
+{
+ "type": "ai_backgrounds",
+ "out": "brand/backgrounds/hq/ai-3",
+ "images": {
+  "bedroom-1": "serene main bedroom with a large bed, crisp white linen, wooden headboard, big window with a view of green mountains, soft morning light",
+  "patio-1": "covered patio with an outdoor dining table and a built-in brick braai overlooking a lush garden and mountains, golden hour",
+  "bathroom-1": "luxury modern bathroom with a freestanding white bath, large window, wooden vanity and plants, bright natural light"
+ }
+}
