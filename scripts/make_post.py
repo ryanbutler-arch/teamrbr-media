@@ -29,7 +29,7 @@ LOGO = os.path.join(REPO, "brand", "kw-eden-logo.png")
 FOOTER = ("Ryan Butler", "Team RBR", "083 281 7918")
 BANNED = ("realty", "valuation")
 LIB = os.path.join(REPO, "brand", "backgrounds", "library")
-MAX_UPSCALE = 1.25  # never stretch a photo more than 25%
+MAX_UPSCALE = 1.01  # only photos at full resolution for the frame — never stretched
 
 
 def pick_bg(s, spec, i, used=None):

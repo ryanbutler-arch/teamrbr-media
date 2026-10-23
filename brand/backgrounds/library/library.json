@@ -1,119 +1,243 @@
 [
  {
-  "file": "kitchen-c2-kitchen-1.jpg",
+  "file": "hq-ai-1-dusk-1.jpg",
   "tags": [
-   "kitchen",
-   "interior"
+   "dusk",
+   "exterior"
   ],
-  "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:Blue_white_kitchen_interior_(Unsplash).jpg",
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
   "size": [
-   2400,
-   1600
+   1088,
+   1920
   ]
  },
  {
-  "file": "living-c2-living-1.jpg",
+  "file": "hq-ai-1-entrance-1.jpg",
   "tags": [
-   "living",
-   "interior"
+   "entrance",
+   "exterior"
   ],
-  "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:Living_room_(Unsplash).jpg",
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
   "size": [
-   2400,
-   1602
+   1088,
+   1920
   ]
  },
  {
-  "file": "interior-c2-interior-1.jpg",
+  "file": "hq-ai-1-pool-1.jpg",
   "tags": [
-   "interior"
+   "pool",
+   "exterior",
+   "lifestyle"
   ],
-  "license": "cc0",
-  "source": "https://commons.wikimedia.org/wiki/File:Pexels-atbo-245208.jpg",
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
   "size": [
-   2400,
-   1733
+   1088,
+   1920
   ]
  },
  {
-  "file": "ai2-exterior-1.jpg",
+  "file": "hq-ai-2-exterior-1.jpg",
   "tags": [
    "exterior",
    "george"
   ],
-  "license": "AI generated (FLUX)",
+  "license": "AI generated (FLUX.1-schnell)",
   "ai": true,
   "size": [
-   896,
-   1600
+   1088,
+   1920
   ]
  },
  {
-  "file": "ai2-kitchen-2.jpg",
+  "file": "hq-ai-2-kitchen-1.jpg",
   "tags": [
    "kitchen",
    "interior"
   ],
-  "license": "AI generated (FLUX)",
+  "license": "AI generated (FLUX.1-schnell)",
   "ai": true,
   "size": [
-   896,
-   1600
+   1088,
+   1920
   ]
  },
  {
-  "file": "ai2-living-1.jpg",
+  "file": "hq-ai-2-living-1.jpg",
   "tags": [
    "living",
-   "interior"
+   "interior",
+   "lifestyle"
   ],
-  "license": "AI generated (FLUX)",
+  "license": "AI generated (FLUX.1-schnell)",
   "ai": true,
   "size": [
-   896,
-   1600
+   1088,
+   1920
   ]
  },
  {
-  "file": "ai3-bedroom-1.jpg",
+  "file": "hq-ai-3-bathroom-1.jpg",
+  "tags": [
+   "bathroom",
+   "interior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-ai-3-bedroom-1.jpg",
   "tags": [
    "bedroom",
-   "interior"
+   "interior",
+   "george"
   ],
-  "license": "AI generated (FLUX)",
+  "license": "AI generated (FLUX.1-schnell)",
   "ai": true,
   "size": [
-   896,
-   1600
+   1088,
+   1920
   ]
  },
  {
-  "file": "ai3-dining-1.jpg",
-  "tags": [
-   "dining",
-   "interior"
-  ],
-  "license": "AI generated (FLUX)",
-  "ai": true,
-  "size": [
-   896,
-   1600
-  ]
- },
- {
-  "file": "ai3-estate-1.jpg",
+  "file": "hq-ai-4-estate-1.jpg",
   "tags": [
    "estate",
    "exterior",
    "george"
   ],
-  "license": "AI generated (FLUX)",
+  "license": "AI generated (FLUX.1-schnell)",
   "ai": true,
   "size": [
-   896,
-   1600
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-ai-4-exterior-2.jpg",
+  "tags": [
+   "exterior",
+   "patio",
+   "george"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-ai-4-garden-1.jpg",
+  "tags": [
+   "garden",
+   "lifestyle",
+   "exterior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-ai-5-coast-1.jpg",
+  "tags": [
+   "coast",
+   "lifestyle"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-ai-5-dining-1.jpg",
+  "tags": [
+   "dining",
+   "interior",
+   "lifestyle"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-ai-5-dusk-2.jpg",
+  "tags": [
+   "dusk",
+   "exterior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-photo-living-1.jpg",
+  "tags": [
+   "living",
+   "interior"
+  ],
+  "license": "cc0",
+  "source": "https://commons.wikimedia.org/wiki/File:At_Home_(Unsplash).jpg",
+  "size": [
+   3614,
+   2400
+  ]
+ },
+ {
+  "file": "hq-photo-living-5.jpg",
+  "tags": [
+   "dining",
+   "interior"
+  ],
+  "license": "cc0",
+  "source": "https://commons.wikimedia.org/wiki/File:Laptop_on_a_living_room_table_(Unsplash).jpg",
+  "size": [
+   3600,
+   2400
+  ]
+ },
+ {
+  "file": "hq-photo-interior-6.jpg",
+  "tags": [
+   "interior",
+   "living"
+  ],
+  "license": "cc0",
+  "source": "https://commons.wikimedia.org/wiki/File:Breather_Montreal_interior_(Unsplash).jpg",
+  "size": [
+   3596,
+   2400
+  ]
+ },
+ {
+  "file": "hq-photo-home-4.jpg",
+  "tags": [
+   "exterior",
+   "garden"
+  ],
+  "license": "cc0",
+  "source": "https://commons.wikimedia.org/wiki/File:Cozy_white_house_(Unsplash).jpg",
+  "size": [
+   3600,
+   2400
   ]
  }
 ]
