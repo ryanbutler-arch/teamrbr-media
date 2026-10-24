@@ -1,0 +1,13 @@
+{
+ "out": "media/2026-10-24/story-a.jpg",
+ "type": "story",
+ "slides": [
+  {
+   "kicker": "Buyer tip",
+   "headline": "Open every tap at a viewing",
+   "body": "Small checks now save big surprises later. My checklist covers the rest.",
+   "cta": "DM me 'CHECK'",
+   "bg": "brand/backgrounds/library/hq-ai-2-kitchen-1.jpg"
+  }
+ ]
+}

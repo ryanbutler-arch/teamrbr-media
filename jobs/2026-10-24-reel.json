@@ -1,0 +1,42 @@
+{
+ "out": "media/2026-10-24/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {
+   "kicker": "Buying in George",
+   "headline": "Your first viewing in George",
+   "body": "Check these before you fall in love.",
+   "say": "Picture this. Your first viewing in George.",
+   "bg": "brand/backgrounds/library/hq-ai-6-entrance-2.jpg"
+  },
+  {
+   "kicker": "Check 1",
+   "headline": "Open every tap",
+   "body": "Water pressure, and how long hot water takes.",
+   "say": "Open every tap. Check the water pressure, and how long the hot water takes.",
+   "bg": "brand/backgrounds/library/hq-ai-3-bathroom-1.jpg"
+  },
+  {
+   "kicker": "Check 2",
+   "headline": "Look up, then down",
+   "body": "Damp marks on ceilings. Cracks near windows.",
+   "say": "Look up, then look down. Damp marks and cracks near windows tell a story.",
+   "bg": "brand/backgrounds/library/hq-ai-6-lounge-1.jpg"
+  },
+  {
+   "kicker": "Check 3",
+   "headline": "Walk around outside",
+   "body": "Gutters, drainage and where the winter sun falls.",
+   "say": "Then walk outside. Gutters, drainage, and where the sun falls in winter.",
+   "bg": "brand/backgrounds/library/hq-ai-4-garden-1.jpg"
+  },
+  {
+   "kicker": "Team RBR",
+   "headline": "Want my viewing checklist?",
+   "body": "Take it with you to every viewing.",
+   "cta": "DM me 'CHECK'",
+   "say": "Want my full viewing checklist? DM me check. Or tap the link in my bio.",
+   "bg": "brand/backgrounds/library/hq-ai-1-dusk-1.jpg"
+  }
+ ]
+}
