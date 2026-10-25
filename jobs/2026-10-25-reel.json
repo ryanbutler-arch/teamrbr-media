@@ -1,0 +1,11 @@
+{
+ "out": "media/2026-10-25/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {"kicker": "Selling in George", "headline": "POV: buyers arrive Saturday", "body": "What they notice before they say a word.", "say": "Picture this. Buyers are walking up to your front door.", "bg": "brand/backgrounds/library/hq-ai-1-entrance-1.jpg"},
+  {"kicker": "First 10 seconds", "headline": "They judge the outside", "body": "Sweep the path. Clean the door. Fix the light.", "say": "They judge your home before they step inside. Sweep the path and clean the front door.", "bg": "brand/backgrounds/library/hq-ai-2-exterior-1.jpg"},
+  {"kicker": "Then inside", "headline": "Open every curtain", "body": "Light makes every room feel bigger.", "say": "Open every curtain. Light makes every room feel bigger.", "bg": "brand/backgrounds/library/hq-photo-living-1.jpg"},
+  {"kicker": "One more thing", "headline": "Fresh air, not air freshener", "body": "Open the windows an hour before.", "say": "Open the windows an hour before. Fresh air beats any spray.", "bg": "brand/backgrounds/library/hq-ai-3-bedroom-1.jpg"},
+  {"kicker": "Free for George sellers", "headline": "Get your free market analysis", "body": "Plus my get-your-home-ready checklist.", "cta": "Comment MARKET", "say": "Want my checklist and a free market analysis? Comment market and I'll send it to you. Or tap the link in my bio.", "bg": "brand/backgrounds/library/hq-ai-5-dusk-2.jpg"}
+ ]
+}
