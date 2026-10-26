@@ -1,0 +1,11 @@
+{
+ "out": "media/2026-10-26/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {"kicker": "Buying in George", "headline": "POV: you found the one", "body": "Then the costs on top of the price arrive.", "say": "Picture this. You've just found the perfect home in George.", "bg": "brand/backgrounds/library/hq-photo-home-4.jpg"},
+  {"kicker": "Cost one", "headline": "Transfer costs", "body": "Transfer duty and the transfer attorney's fees.", "say": "But the price isn't everything. There are transfer costs and attorney's fees.", "bg": "brand/backgrounds/library/hq-ai-5-dining-1.jpg"},
+  {"kicker": "Cost two", "headline": "Your bond costs too", "body": "Bond registration and bank fees.", "say": "Taking a bond? Registering it costs money too, and the bank has its own fees.", "bg": "brand/backgrounds/library/hq-ai-2-kitchen-1.jpg"},
+  {"kicker": "Then every month", "headline": "Rates, levies, the move", "body": "Budget for them before you make an offer.", "say": "Then rates, levies and the move itself. Know your full number before you offer.", "bg": "brand/backgrounds/library/hq-ai-2-living-1.jpg"},
+  {"kicker": "Free guide", "headline": "Know your full number", "body": "Buying in George: the costs on top of the price.", "cta": "DM me 'COSTS'", "say": "Want my free costs guide? DM me costs and I'll send it to you. Or tap the link in my bio.", "bg": "brand/backgrounds/library/hq-ai-1-dusk-1.jpg"}
+ ]
+}
