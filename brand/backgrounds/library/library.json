@@ -281,5 +281,113 @@
    1088,
    1920
   ]
+ },
+ {
+  "file": "hq-20261026-kitchen-1.jpg",
+  "tags": [
+   "kitchen",
+   "interior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261026-bathroom-1.jpg",
+  "tags": [
+   "bathroom",
+   "interior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261026-bedroom-1.jpg",
+  "tags": [
+   "bedroom",
+   "interior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261026-street-1.jpg",
+  "tags": [
+   "george",
+   "exterior",
+   "lifestyle"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261026-garden-2.jpg",
+  "tags": [
+   "garden",
+   "exterior",
+   "lifestyle"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261026-coast-2.jpg",
+  "tags": [
+   "coast",
+   "exterior",
+   "lifestyle"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261026-pool-2.jpg",
+  "tags": [
+   "pool",
+   "exterior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261026-aerial-2.jpg",
+  "tags": [
+   "aerial",
+   "george",
+   "estate"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
  }
 ]
