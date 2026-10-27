@@ -1,0 +1,11 @@
+{
+ "out": "media/2026-10-27/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {"kicker": "Blanco, George", "headline": "Own a home in Blanco?", "body": "Listen to this before you price it.", "say": "If you own a home in Blanco, listen to this.", "bg": "brand/backgrounds/library/hq-20261026-street-1.jpg"},
+  {"kicker": "Truth one", "headline": "Asking prices aren't sold prices", "body": "What similar homes actually sold for sets your price.", "say": "The neighbour's asking price doesn't set yours. What similar homes actually sold for does.", "bg": "brand/backgrounds/library/hq-20261026-aerial-2.jpg"},
+  {"kicker": "Truth two", "headline": "Condition counts", "body": "Clean, fixed and ready homes get stronger offers.", "say": "Condition counts. Clean, fixed and ready homes get stronger offers.", "bg": "brand/backgrounds/library/hq-20261026-kitchen-1.jpg"},
+  {"kicker": "Truth three", "headline": "Buyers compare", "body": "Your home is judged against everything else for sale nearby.", "say": "And buyers compare you with everything else for sale nearby.", "bg": "brand/backgrounds/library/hq-20261026-garden-2.jpg"},
+  {"kicker": "Free market analysis", "headline": "Want your real number?", "body": "Plus my get-your-home-ready checklist.", "cta": "Comment MARKET", "say": "Want your real number? Comment market for a free market analysis. Or tap the link in my bio.", "bg": "brand/backgrounds/library/hq-ai-5-dusk-2.jpg"}
+ ]
+}

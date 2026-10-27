@@ -1,0 +1,13 @@
+{
+ "out": "media/2026-10-27/carousel",
+ "type": "carousel",
+ "slides": [
+  {"kicker": "Buying in George", "headline": "5 things to check at a viewing", "body": "Save this for your next one.", "bg": "tag:entrance"},
+  {"kicker": "Check 1", "headline": "Run every tap", "body": "Check the water pressure and how long the hot water takes.", "bg": "tag:bathroom"},
+  {"kicker": "Check 2", "headline": "Look for damp", "body": "Marks on ceilings, in corners and near windows are worth asking about.", "bg": "tag:bedroom"},
+  {"kicker": "Check 3", "headline": "Walk around outside", "body": "Look up at the roof and gutters, and down at the drainage.", "bg": "tag:exterior"},
+  {"kicker": "Check 4", "headline": "Follow the winter sun", "body": "Where the sun falls in winter changes how a home feels.", "bg": "tag:garden"},
+  {"kicker": "Check 5", "headline": "Ask what's included", "body": "Blinds, light fittings, the pool pump. Get it in writing.", "bg": "tag:pool"},
+  {"kicker": "Free checklist", "headline": "Get The Viewing Checklist", "body": "Everything to check, room by room, before you make an offer.", "cta": "Comment CHECK", "bg": "tag:dusk"}
+ ]
+}
