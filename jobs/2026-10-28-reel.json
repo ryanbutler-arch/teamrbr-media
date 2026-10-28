@@ -1,0 +1,11 @@
+{
+ "out": "media/2026-10-28/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {"kicker": "Selling in George", "headline": "POV: buyers scroll past", "body": "Your home is online. Nobody is clicking.", "say": "POV: buyers in George are scrolling right past your home.", "bg": "tag:exterior"},
+  {"kicker": "Fix one", "headline": "The first photo decides", "body": "Lead with your best room in good daylight.", "say": "The first photo decides everything. Lead with your best room, in good daylight.", "bg": "tag:living"},
+  {"kicker": "Fix two", "headline": "Price in the right band", "body": "Just above a search filter, and many buyers never see you.", "say": "Price in the right band. Just above a search filter, and many buyers never see you.", "bg": "tag:aerial"},
+  {"kicker": "Fix three", "headline": "Clear, bright rooms", "body": "Clear the counters and open every curtain before the shoot.", "say": "Before the photo shoot, clear the counters and open every curtain.", "bg": "tag:kitchen"},
+  {"kicker": "Free market analysis", "headline": "Know your real number", "body": "Plus my get-your-home-ready checklist.", "cta": "DM me 'MARKET'", "say": "Want to know your real number? DM me market for a free market analysis and my checklist. Or tap the link in my bio.", "bg": "tag:dusk"}
+ ]
+}
