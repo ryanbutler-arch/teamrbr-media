@@ -1,0 +1,11 @@
+{
+ "out": "media/2026-10-29/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {"kicker": "Viewing in George", "headline": "3 questions at every viewing", "body": "Ask these before you fall in love.", "say": "Three questions to ask at every viewing in George.", "bg": "brand/backgrounds/library/hq-ai-6-entrance-2.jpg"},
+  {"kicker": "Question one", "headline": "Why are they selling?", "body": "The answer tells you a lot.", "say": "One. Why are they selling? The answer tells you a lot.", "bg": "brand/backgrounds/library/hq-ai-6-lounge-1.jpg"},
+  {"kicker": "Question two", "headline": "What stays with the house?", "body": "Blinds, stove, pool pump. Get it in writing.", "say": "Two. What stays with the house? Blinds, stove, pool pump. Get it in writing.", "bg": "brand/backgrounds/library/hq-ai-2-kitchen-1.jpg"},
+  {"kicker": "Question three", "headline": "What does it cost each month?", "body": "Rates, levies and electricity, before you offer.", "say": "Three. What does it cost each month? Rates, levies and electricity.", "bg": "brand/backgrounds/library/hq-ai-2-exterior-1.jpg"},
+  {"kicker": "Free viewing checklist", "headline": "Get The Viewing Checklist", "body": "Room by room, from Team RBR.", "cta": "Comment CHECK", "say": "Want my full viewing checklist? Comment check and I'll send it to you. Or tap the link in my bio.", "bg": "brand/backgrounds/library/hq-ai-5-dusk-2.jpg"}
+ ]
+}
