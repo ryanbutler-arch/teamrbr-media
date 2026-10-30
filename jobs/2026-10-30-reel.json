@@ -1,0 +1,11 @@
+{
+ "out": "media/2026-10-30/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {"kicker": "Viewing in George", "headline": "POV: it looks perfect", "body": "Check these before you fall in love.", "say": "Picture this. You're at a viewing in George, and the house looks perfect.", "bg": "brand/backgrounds/library/hq-ai-1-entrance-1.jpg"},
+  {"kicker": "Check one", "headline": "Look past the fresh paint", "body": "Ask when it was done, and why.", "say": "Look past the fresh paint. Ask when it was done, and why.", "bg": "brand/backgrounds/library/hq-20261026-bedroom-1.jpg"},
+  {"kicker": "Check two", "headline": "Find the geyser", "body": "Ask how old it is and where it sits.", "say": "Find the geyser. Ask how old it is, and where it sits.", "bg": "brand/backgrounds/library/hq-20261026-bathroom-1.jpg"},
+  {"kicker": "Check three", "headline": "Look under the sink", "body": "Leaks, swollen boards and damp marks.", "say": "Open the cupboard under the kitchen sink. Look for leaks and swollen boards.", "bg": "brand/backgrounds/library/hq-20261026-kitchen-1.jpg"},
+  {"kicker": "Free viewing checklist", "headline": "Get The Viewing Checklist", "body": "Room by room, from Team RBR.", "cta": "DM me 'CHECK'", "say": "Want my full viewing checklist? DM me check, and I'll send it to you. Or tap the link in my bio.", "bg": "brand/backgrounds/library/hq-ai-1-dusk-1.jpg"}
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "out": "media/2026-10-30/carousel",
+ "type": "carousel",
+ "slides": [
+  {"kicker": "Selling in George", "headline": "POV: your first viewing is Saturday", "body": "Five jobs to do this week. Save this.", "bg": "brand/backgrounds/library/hq-ai-4-exterior-2.jpg"},
+  {"kicker": "Job 1", "headline": "Fix the small things", "body": "Dripping taps, loose handles, blown globes. Buyers notice every one.", "bg": "brand/backgrounds/library/hq-ai-3-bathroom-1.jpg"},
+  {"kicker": "Job 2", "headline": "Clear every surface", "body": "Counters, tables and shelves. Less stuff makes every room look bigger.", "bg": "brand/backgrounds/library/hq-ai-5-dining-1.jpg"},
+  {"kicker": "Job 3", "headline": "Let the light in", "body": "Clean the windows and open every curtain before buyers arrive.", "bg": "brand/backgrounds/library/hq-ai-3-bedroom-1.jpg"},
+  {"kicker": "Job 4", "headline": "Tidy the way in", "body": "Sweep the path, trim the garden and clean the front door.", "bg": "brand/backgrounds/library/hq-20261026-garden-2.jpg"},
+  {"kicker": "Job 5", "headline": "Get your paperwork ready", "body": "Plans, guarantees and certificates. Ask early what you will need.", "bg": "brand/backgrounds/library/hq-ai-2-living-1.jpg"},
+  {"kicker": "Free market analysis", "headline": "Get your home ready to sell", "body": "A free market analysis of your home, plus my get-your-home-ready checklist.", "cta": "DM me 'MARKET'", "bg": "brand/backgrounds/library/hq-ai-4-estate-1.jpg"}
+ ]
+}
