@@ -1,0 +1,11 @@
+{
+ "out": "media/2026-11-01/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {"kicker": "Second viewing", "headline": "POV: you're going back", "body": "Do these three things on round two.", "say": "Picture this. You loved a house in George, and you're going back.", "bg": "brand/backgrounds/library/hq-ai-4-exterior-2.jpg"},
+  {"kicker": "Step one", "headline": "Go at a different time", "body": "Rush hour shows you the noise and traffic.", "say": "Go at a different time. Rush hour shows you the noise.", "bg": "brand/backgrounds/library/hq-20261026-street-1.jpg"},
+  {"kicker": "Step two", "headline": "Run shower and tap together", "body": "Then watch the water pressure.", "say": "Run the shower and a tap together. Watch the pressure.", "bg": "brand/backgrounds/library/hq-ai-3-bathroom-1.jpg"},
+  {"kicker": "Step three", "headline": "Say hello to a neighbour", "body": "They'll tell you what no listing will.", "say": "Say hello to a neighbour. They'll tell you what no listing will.", "bg": "brand/backgrounds/library/hq-ai-4-garden-1.jpg"},
+  {"kicker": "Free viewing checklist", "headline": "Get The Viewing Checklist", "body": "Room by room, from Team RBR.", "cta": "Comment CHECK", "say": "Want my viewing checklist? Comment check and I'll send it to you. Or tap the link in my bio.", "bg": "brand/backgrounds/library/hq-ai-5-dusk-2.jpg"}
+ ]
+}
