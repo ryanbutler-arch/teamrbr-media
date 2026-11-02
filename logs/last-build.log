@@ -1,1 +1,7 @@
-built media/2026-11-02/story-b.jpg
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+gtts 2.5.4 requires click<8.2,>=7.1, but you have click 8.5.0 which is incompatible.
+Loaded as API: https://black-forest-labs-flux-1-schnell.hf.space
+saved dusk-1 hf (1088, 1920)
+saved entrance-1 hf (1088, 1920)
+saved kitchen-1 hf (1088, 1920)
+built brand/backgrounds/hq/2026-11-02-1
