@@ -389,5 +389,98 @@
    1088,
    1920
   ]
+ },
+ {
+  "file": "hq-20261102-dusk-1.jpg",
+  "tags": [
+   "dusk",
+   "exterior",
+   "george"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261102-entrance-1.jpg",
+  "tags": [
+   "entrance",
+   "exterior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261102-kitchen-1.jpg",
+  "tags": [
+   "kitchen",
+   "interior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261102-bathroom-1.jpg",
+  "tags": [
+   "bathroom",
+   "interior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261102-bedroom-1.jpg",
+  "tags": [
+   "bedroom",
+   "interior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261102-aerial-1.jpg",
+  "tags": [
+   "aerial",
+   "george",
+   "lifestyle"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261102-coast-1.jpg",
+  "tags": [
+   "coast",
+   "lifestyle"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
  }
 ]
