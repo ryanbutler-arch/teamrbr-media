@@ -1,0 +1,13 @@
+{
+ "out": "media/2026-11-03/carousel",
+ "type": "carousel",
+ "slides": [
+  {"kicker": "Selling in George", "headline": "5 mistakes that cost sellers offers", "body": "Most are fixed in a weekend. Save this before your first viewing.", "bg": "tag:exterior"},
+  {"kicker": "Mistake 1", "headline": "Ignoring the small repairs", "body": "Dripping taps, loose handles, blown globes. Buyers add up every one.", "bg": "tag:bathroom"},
+  {"kicker": "Mistake 2", "headline": "Too much stuff on show", "body": "Clear counters, tables and shelves. Rooms look bigger straight away.", "bg": "tag:kitchen"},
+  {"kicker": "Mistake 3", "headline": "Dark rooms on viewing day", "body": "Clean the windows and open every curtain before buyers arrive.", "bg": "tag:bedroom"},
+  {"kicker": "Mistake 4", "headline": "A messy way in", "body": "Buyers judge from the gate. Sweep the path, trim the garden, clean the front door.", "bg": "tag:entrance"},
+  {"kicker": "Mistake 5", "headline": "Leaving paperwork too late", "body": "Plans, guarantees and certificates. Ask early what you will need.", "bg": "tag:living"},
+  {"kicker": "Free market analysis", "headline": "Get your home ready to sell", "body": "A free market analysis of your home, plus my get-your-home-ready checklist.", "cta": "Comment MARKET", "bg": "tag:dusk"}
+ ]
+}
