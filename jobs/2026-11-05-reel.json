@@ -1,0 +1,11 @@
+{
+ "out": "media/2026-11-05/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {"kicker": "Myth", "headline": "Your neighbour's price isn't yours", "body": "Selling in George? Here's why.", "say": "Your neighbour's sale price is not your price.", "bg": "brand/backgrounds/library/hq-20261026-aerial-2.jpg"},
+  {"kicker": "Truth one", "headline": "No two homes are the same", "body": "Size, condition, the stand, the view.", "say": "Every home is different. Size, condition, the stand, the view. Even on one street in Heather Park.", "bg": "brand/backgrounds/library/hq-ai-6-entrance-2.jpg"},
+  {"kicker": "Truth two", "headline": "Asking isn't sold", "body": "What they listed at may not be what they got.", "say": "And an asking price isn't a sold price.", "bg": "brand/backgrounds/library/hq-photo-living-1.jpg"},
+  {"kicker": "Truth three", "headline": "Markets move", "body": "Last year's sale tells you about last year.", "say": "The market moves too. Last year's sale tells you about last year.", "bg": "brand/backgrounds/library/hq-20261102-aerial-1.jpg"},
+  {"kicker": "Free market analysis", "headline": "Get your real number", "body": "A free market analysis of your home, from Team RBR.", "cta": "Comment MARKET", "say": "Want your real number? Comment the word market and I'll send you a free market analysis. Or tap the link in my bio.", "bg": "brand/backgrounds/library/hq-ai-1-dusk-1.jpg"}
+ ]
+}
