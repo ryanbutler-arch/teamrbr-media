@@ -482,5 +482,46 @@
    1088,
    1920
   ]
+ },
+ {
+  "file": "hq-20261109-dining-1.jpg",
+  "tags": [
+   "dining",
+   "interior"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261109-pool-1.jpg",
+  "tags": [
+   "pool",
+   "exterior",
+   "garden"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
+ },
+ {
+  "file": "hq-20261109-garden-1.jpg",
+  "tags": [
+   "garden",
+   "exterior",
+   "entrance"
+  ],
+  "license": "AI generated (FLUX.1-schnell)",
+  "ai": true,
+  "size": [
+   1088,
+   1920
+  ]
  }
 ]
