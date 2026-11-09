@@ -4,7 +4,5 @@ gtts 2.5.4 requires click<8.2,>=7.1, but you have click 8.5.1 which is incompati
 [notice] A new release of pip is available: 26.2.2 -> 26.3
 [notice] To update, run: pip install --upgrade pip
 Loaded as API: https://black-forest-labs-flux-1-schnell.hf.space
-saved garden-1 hf (1088, 1920)
-saved patio-1 hf (1088, 1920)
-saved estate-1 hf (1088, 1920)
-built brand/backgrounds/hq/2026-11-09-2
+fail bedroom-1 hf AppError('You have exceeded your ZeroGPU quota (90s requested vs. 0s left). Try again in 0:00:00. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens')
+no images generated
