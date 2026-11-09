@@ -1,0 +1,42 @@
+{
+ "out": "media/2026-11-09/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {
+   "kicker": "Selling in George",
+   "headline": "Don't hide the damp patch",
+   "body": "This mistake can sink your sale.",
+   "say": "Selling in George? Don't hide the damp patch.",
+   "bg": "brand/backgrounds/library/hq-ai-4-exterior-2.jpg"
+  },
+  {
+   "kicker": "Mistake",
+   "headline": "Buyers find it anyway",
+   "body": "At the inspection, or the day they move in.",
+   "say": "Buyers find it anyway. At the inspection, or the day they move in.",
+   "bg": "brand/backgrounds/library/hq-20261102-bedroom-1.jpg"
+  },
+  {
+   "kicker": "Good to know",
+   "headline": "Known defects go in writing",
+   "body": "Sellers fill in a disclosure form before the sale.",
+   "say": "And in South Africa, known defects go on a disclosure form. So be upfront.",
+   "bg": "brand/backgrounds/library/hq-ai-6-lounge-1.jpg"
+  },
+  {
+   "kicker": "Do this instead",
+   "headline": "Fix it, or price it",
+   "body": "Repair it, or get a quote and let the price reflect it.",
+   "say": "Fix it, or get a quote and let the price reflect it.",
+   "bg": "brand/backgrounds/library/hq-20261026-bathroom-1.jpg"
+  },
+  {
+   "kicker": "Free market analysis",
+   "headline": "Know your real number",
+   "body": "Plus my get-your-home-ready checklist.",
+   "cta": "DM me 'MARKET'",
+   "say": "DM me the word market for a free market analysis and my checklist. Or tap the link in my bio.",
+   "bg": "brand/backgrounds/library/hq-20261102-dusk-1.jpg"
+  }
+ ]
+}
