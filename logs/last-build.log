@@ -1,1 +1,5 @@
-built media/2026-11-17/story-b.jpg
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+gtts 2.5.4 requires click<8.2,>=7.1, but you have click 8.5.1 which is incompatible.
+Loaded as API: https://black-forest-labs-flux-1-schnell.hf.space
+fail winter-1 hf AppError('You have exceeded your ZeroGPU quota (90s requested vs. 83s left). Try again in 6:02:26. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens')
+no images generated
