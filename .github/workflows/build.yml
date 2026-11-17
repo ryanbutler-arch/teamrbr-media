@@ -14,6 +14,7 @@ jobs:
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
       - name: Find pending jobs
@@ -22,6 +23,9 @@ jobs:
           for j in jobs/*.json; do
             [ -e "$j" ] || continue
             out=$(python -c "import json;print(json.load(open('$j'))['out'])")
+            fl="logs/FAILED-$(basename "$j" .json).log"
+            if [ ! -e "$out" ] && [ -e "$fl" ] && [ "$(git log -1 --format=%ct -- "$fl")" -ge "$(git log -1 --format=%ct -- "$j")" ]; then
+              echo "skip $j (failed before and the job has not changed since; edit the job to retry)"; continue; fi
             if [ ! -e "$out" ]; then pending="$pending $j"
               python -c "import json,sys;sys.exit(0 if json.load(open('$j')).get('type')=='clip' else 1)" && needclip=1
             fi
@@ -49,6 +53,8 @@ jobs:
       - name: Build pending jobs
         if: env.PENDING != ''
         timeout-minutes: 22
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           set -e
           built=0

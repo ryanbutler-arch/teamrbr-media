@@ -1,3 +1,4 @@
+import os
 """Generate photoreal real-estate backgrounds with free image models.
 Order: Hugging Face FLUX.1-schnell Space (anonymous, free GPU quota) -> Pollinations FLUX (anonymous, rate limited).
 Job: {"type":"ai_backgrounds","out":"brand/backgrounds/ai/<batch>","images":{"name":"prompt", ...}}
@@ -14,7 +15,8 @@ def hf_client():
     try:
         subprocess.run([sys.executable, "-m", "pip", "install", "-q", "gradio_client"], check=True, timeout=180)
         from gradio_client import Client
-        return Client("black-forest-labs/FLUX.1-schnell")
+        tok = os.environ.get("HF_TOKEN") or None
+        return Client("black-forest-labs/FLUX.1-schnell", token=tok) if tok else Client("black-forest-labs/FLUX.1-schnell")
     except Exception as e:
         print("hf unavailable", repr(e)[:200], flush=True)
         return None
