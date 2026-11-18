@@ -1,0 +1,13 @@
+{
+ "out": "media/2026-11-18/carousel",
+ "type": "carousel",
+ "slides": [
+  {"kicker": "Selling in George", "headline": "Get these 5 ready before you list", "body": "Sellers who prepare early avoid delays after the offer. Save this.", "bg": "tag:exterior"},
+  {"kicker": "1 of 5", "headline": "Your building plans", "body": "Approved plans for the house and any additions. Can't find them? Start looking now.", "bg": "tag:living"},
+  {"kicker": "2 of 5", "headline": "Compliance certificates", "body": "Your attorney will ask for them, like the electrical certificate. Book the inspections early.", "bg": "tag:kitchen"},
+  {"kicker": "3 of 5", "headline": "Your bond details", "body": "Ask your bank what it needs to cancel your bond, and how much notice it wants.", "bg": "tag:dining"},
+  {"kicker": "4 of 5", "headline": "A list of what stays", "body": "Curtains, light fittings, the pool pump. Decide now so every offer is clear.", "bg": "tag:pool"},
+  {"kicker": "5 of 5", "headline": "The small repairs", "body": "Dripping taps, loose handles, cracked tiles. Fix them before the photos.", "bg": "tag:bathroom"},
+  {"kicker": "Free market analysis", "headline": "Know your number first", "body": "A free market analysis of your home, plus my get-your-home-ready checklist.", "cta": "DM me 'MARKET'", "bg": "tag:dusk"}
+ ]
+}
