@@ -1,0 +1,42 @@
+{
+ "out": "media/2026-11-19/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {
+   "kicker": "Buying in George",
+   "headline": "Don't budget for the price only",
+   "body": "This mistake catches first-time buyers out.",
+   "say": "Buying in George? Don't budget for the price only.",
+   "bg": "tag:entrance"
+  },
+  {
+   "kicker": "Cost 1",
+   "headline": "Transfer costs",
+   "body": "Transfer duty, depending on the price, plus the conveyancer's fees.",
+   "say": "First, transfer costs. Transfer duty, depending on the price, and the conveyancer's fees.",
+   "bg": "tag:living"
+  },
+  {
+   "kicker": "Cost 2",
+   "headline": "Bond costs",
+   "body": "Taking a bond? Registering it has its own fees.",
+   "say": "Taking a bond? Registering it has its own fees too.",
+   "bg": "tag:kitchen"
+  },
+  {
+   "kicker": "Cost 3",
+   "headline": "The small stuff adds up",
+   "body": "Moving, connections and the first repairs.",
+   "say": "Then the small stuff. Moving, connections, and the first repairs. It adds up fast.",
+   "bg": "tag:bedroom"
+  },
+  {
+   "kicker": "Free guide",
+   "headline": "Know the full cost first",
+   "body": "Buying in George: the costs on top of the price.",
+   "cta": "Comment COSTS",
+   "say": "Comment the word costs and I'll send you my free guide to the costs on top of the price. Or tap the link in my bio.",
+   "bg": "tag:george"
+  }
+ ]
+}
