@@ -1,0 +1,11 @@
+{
+ "out": "media/2026-11-23/reel.mp4",
+ "type": "reel",
+ "slides": [
+  {"kicker": "Selling in George", "headline": "The pricing mistake that stalls sales", "body": "Starting too high costs you buyers.", "say": "Selling in George? This pricing mistake stalls sales.", "bg": "tag:exterior"},
+  {"kicker": "Why", "headline": "Buyers search in price bands", "body": "Price too high and the right buyers never see your home.", "say": "Buyers search in price bands. Price too high, and the right buyers never see your home.", "bg": "tag:aerial"},
+  {"kicker": "Then", "headline": "Your listing goes stale", "body": "The longer it sits, the more buyers wonder why.", "say": "And the longer it sits, the more buyers wonder what's wrong with it.", "bg": "tag:garden"},
+  {"kicker": "The fix", "headline": "Price on real sold prices", "body": "What homes like yours sold for. Not asking prices.", "say": "Price on what homes like yours actually sold for. Not on asking prices.", "bg": "tag:estate"},
+  {"kicker": "Free market analysis", "headline": "Know your price first", "body": "Plus my get-your-home-ready checklist.", "cta": "Comment MARKET", "say": "Comment market and I'll send you a free market analysis of your home. Or tap the link in my bio.", "bg": "tag:dusk"}
+ ]
+}
