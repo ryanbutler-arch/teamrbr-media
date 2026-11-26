@@ -1,0 +1,13 @@
+{
+ "out": "media/2026-11-26/carousel",
+ "type": "carousel",
+ "slides": [
+  {"kicker": "Buying in George", "headline": "Ask these 5 before you offer", "body": "Five questions that save buyers nasty surprises after they sign. Save this for your next viewing.", "bg": "tag:entrance"},
+  {"kicker": "1 of 5", "headline": "What's included in the sale?", "body": "Curtains, light fittings, the stove, the pool pump. Get it in writing in the offer.", "bg": "tag:living"},
+  {"kicker": "2 of 5", "headline": "Any defects you know of?", "body": "Ask for the seller's disclosure of known defects. Then check it yourself at the viewing.", "bg": "tag:bathroom"},
+  {"kicker": "3 of 5", "headline": "Are the plans approved?", "body": "Extra rooms, a closed-in patio, a flatlet. Ask if every addition is on the approved plans.", "bg": "tag:garden"},
+  {"kicker": "4 of 5", "headline": "What are the monthly costs?", "body": "Rates and taxes, plus levies in an estate or complex. Ask for recent accounts.", "bg": "tag:estate"},
+  {"kicker": "5 of 5", "headline": "Why is it on the market?", "body": "And how long has it been listed? The answers tell you how much room there is to talk.", "bg": "tag:george"},
+  {"kicker": "The Viewing Checklist", "headline": "Take this to every viewing", "body": "My free room-by-room checklist, so nothing slips past you.", "cta": "DM me 'CHECK'", "bg": "tag:dusk"}
+ ]
+}
